@@ -12,7 +12,7 @@ class ViewController2: UIViewController {
     
     let saveData = UserDefaults.standard
     var classInfo = ""
-    var emptyChecker = ""
+    var m2classInfo = ""
     
     
     //buttons
@@ -135,6 +135,8 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //mon1
         if saveData.string(forKey: "CLASSINFO") != nil{
             
             classInfo = saveData.string(forKey: "CLASSINFO")!
@@ -145,6 +147,19 @@ class ViewController2: UIViewController {
             lm1.numberOfLines = 0
             lm1.text = ""
         }
+        //mon2
+        if saveData.string(forKey: "m2CLASSINFO") != nil{
+            
+            m2classInfo = saveData.string(forKey: "m2CLASSINFO")!
+            lm2.numberOfLines = 0
+            lm2.text = m2classInfo
+        }else {
+            lm2.numberOfLines = 0
+            lm2.text = ""
+        }
+        
+        
+        
         }
 
         
