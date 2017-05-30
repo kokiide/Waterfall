@@ -175,12 +175,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Attendance record" id="0vB-Mx-NVy">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ZDk-xO-KKC">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6g9-3W-ggi">
                                             <connections>
-                                                <segue destination="B6x-XH-EPG" kind="show" id="TIa-fu-Ks8"/>
+                                                <segue destination="B6x-XH-EPG" kind="show" id="Olj-T5-ffb"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6g9-3W-ggi"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -244,6 +243,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="absPlus" destination="aU5-Kl-xZo" eventType="touchUpInside" id="7p4-hX-0i6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEa-Ch-cNH">
                                 <rect key="frame" x="84" y="354" width="30" height="30"/>
@@ -252,6 +254,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="attMinus" destination="aU5-Kl-xZo" eventType="touchUpInside" id="RE7-lK-QUY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg6-rf-5oR">
                                 <rect key="frame" x="261" y="354" width="30" height="30"/>
@@ -260,6 +265,9 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="absMinus" destination="aU5-Kl-xZo" eventType="touchUpInside" id="LoD-F5-2jz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxL-Wm-vdM">
                                 <rect key="frame" x="16" y="609" width="343" height="38"/>
@@ -912,7 +920,7 @@
         <image name="chart" width="667" height="1186"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TIa-fu-Ks8"/>
-        <segue reference="tUA-et-Ce6"/>
+        <segue reference="Olj-T5-ffb"/>
+        <segue reference="b4c-ep-KDv"/>
     </inferredMetricsTieBreakers>
 </document>
