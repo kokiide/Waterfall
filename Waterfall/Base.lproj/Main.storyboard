@@ -9,124 +9,75 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Schedule-->
-        <scene sceneID="uff-7q-45G">
+        <!--View Controller3-->
+        <scene sceneID="aYO-DW-iKf">
             <objects>
-                <collectionViewController id="oG2-PK-fHQ" customClass="CollectionViewController" customModule="Waterfall" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5b3-RP-6U3" customClass="collectionView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="trn-OC-kpD">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HLp-Tr-YgJ" customClass="cell">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="oG2-PK-fHQ" id="VhC-3v-2gv"/>
-                            <outlet property="delegate" destination="oG2-PK-fHQ" id="srl-KI-YQX"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Schedule" id="4gA-2y-pKL">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="DMZ-RG-yob"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cX4-lF-Nek">
-                            <connections>
-                                <segue destination="kT9-5B-tKg" kind="show" id="7I3-Iw-ngY"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LOq-zu-9uZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1772" y="132.68365817091455"/>
-        </scene>
-        <!--Append-->
-        <scene sceneID="H7U-ML-QBA">
-            <objects>
-                <viewController id="kT9-5B-tKg" sceneMemberID="viewController">
+                <viewController id="Ol2-iY-dFh" customClass="ViewController3" customModule="Waterfall" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HFA-jg-8Oz"/>
-                        <viewControllerLayoutGuide type="bottom" id="cxD-1S-COW"/>
+                        <viewControllerLayoutGuide type="top" id="C9c-E6-9rd"/>
+                        <viewControllerLayoutGuide type="bottom" id="fI0-Hl-NKL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dJ1-54-0LO">
+                    <view key="view" contentMode="scaleToFill" id="3uD-FB-0Nf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3dv-OA-pTB">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="授業名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTL-HB-PjJ">
+                                <rect key="frame" x="16" y="203" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="教室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6F-8c-lea">
+                                <rect key="frame" x="16" y="323" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gW5-zW-cPj">
+                                <rect key="frame" x="90" y="198" width="269" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rte-po-Fzb">
+                                <rect key="frame" x="90" y="318" width="269" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1K-iB-aGE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Monday 1st Period" id="1Sl-m5-1aV">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CoJ-9l-Aj1">
+                                            <connections>
+                                                <segue destination="B6x-XH-EPG" kind="show" id="347-Fa-oDY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gw0-oP-ezB">
+                                            <connections>
+                                                <action selector="saveIsTapped" destination="Ol2-iY-dFh" id="yvV-Rp-Uw6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zVo-Q3-sA2">
-                                <rect key="frame" x="139" y="221" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vun-Iw-DcX">
-                                <rect key="frame" x="139" y="343" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="授業名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYW-lG-Kf7">
-                                <rect key="frame" x="29" y="224" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="概要" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gt3-Lw-p4y">
-                                <rect key="frame" x="38" y="348" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KiH-Q1-3vs">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Append" id="Ojx-QI-SpZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="zSD-9v-Quh"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qca-rg-TA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2534" y="134"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="idY-Nk-8aK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Ol-yp-Vkv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cjt-LP-eRF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oG2-PK-fHQ" kind="relationship" relationship="rootViewController" id="DTl-jD-xo3"/>
+                        <outlet property="classNameTF" destination="gW5-zW-cPj" id="k8c-8F-yHq"/>
+                        <outlet property="classRoomTF" destination="Rte-po-Fzb" id="gJR-81-Js2"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="baR-ci-LXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJP-AO-iPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832.79999999999995" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1561" y="728"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="WFj-ad-Q0S">
@@ -442,6 +393,9 @@
                                 <rect key="frame" x="48" y="96" width="46" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="Ol2-iY-dFh" kind="show" id="RPz-cF-1av"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3s-hD-KSl">
                                 <rect key="frame" x="48" y="191" width="46" height="94"/>
@@ -653,7 +607,7 @@
                     </view>
                     <connections>
                         <outlet property="e1" destination="2hi-oW-VZg" id="Aei-Ok-N6s"/>
-                        <outlet property="e2" destination="Oye-0L-LxN" id="nRb-rU-fUf"/>
+                        <outlet property="e2" destination="Oye-0L-LxN" id="Vwn-qJ-5zO"/>
                         <outlet property="e3" destination="msK-rE-P6f" id="aJV-hx-kh2"/>
                         <outlet property="e4" destination="Czk-3f-CSq" id="E0q-GK-PV9"/>
                         <outlet property="e5" destination="BNB-sU-GTH" id="dLc-uM-OdZ"/>
@@ -664,6 +618,24 @@
                         <outlet property="f4" destination="KE0-MZ-n0R" id="Fjp-eX-dwz"/>
                         <outlet property="f5" destination="zba-u6-die" id="Flb-UB-hfH"/>
                         <outlet property="f6" destination="3d6-GR-RbN" id="TWw-9O-w1b"/>
+                        <outlet property="le1" destination="AkO-cD-mZN" id="01T-VL-5oR"/>
+                        <outlet property="le2" destination="0nV-qB-icH" id="KlA-BU-Lt4"/>
+                        <outlet property="le3" destination="k3x-nS-nbf" id="Y23-0c-7LY"/>
+                        <outlet property="le4" destination="UsV-Ph-fbw" id="wS0-aO-7Ec"/>
+                        <outlet property="le5" destination="qXA-8U-n3k" id="cFk-24-cpW"/>
+                        <outlet property="le6" destination="S9C-xX-xz6" id="B3Y-E6-yn8"/>
+                        <outlet property="lf1" destination="cC5-7f-tb1" id="5Hy-nb-PgV"/>
+                        <outlet property="lf2" destination="PWN-oJ-lKk" id="JJ0-Xe-FeO"/>
+                        <outlet property="lf3" destination="jxp-Q1-3z3" id="mVp-qh-3IO"/>
+                        <outlet property="lf4" destination="zGC-Oh-zMk" id="oYb-LW-dTP"/>
+                        <outlet property="lf5" destination="tO0-LW-ipD" id="QaN-G5-Igq"/>
+                        <outlet property="lf6" destination="VoL-7H-JQf" id="DpJ-y3-P8a"/>
+                        <outlet property="lm1" destination="irx-Ri-SNg" id="QDX-dk-rGL"/>
+                        <outlet property="lm2" destination="qNv-a3-FQF" id="j8q-5b-Gzq"/>
+                        <outlet property="lm3" destination="ba4-C8-jaT" id="4qJ-rL-Yxn"/>
+                        <outlet property="lm4" destination="RqN-qX-39U" id="YLz-Iv-xWb"/>
+                        <outlet property="lm5" destination="ITp-OX-yAZ" id="mng-PM-Co4"/>
+                        <outlet property="lm6" destination="3tl-0x-xbe" id="N7e-60-9Zm"/>
                         <outlet property="m1" destination="Geh-62-r60" id="Yoa-Cm-PyE"/>
                         <outlet property="m2" destination="O3s-hD-KSl" id="muY-Vm-ohe"/>
                         <outlet property="m3" destination="x76-0C-bAe" id="uX5-5j-nxV"/>

@@ -14,6 +14,7 @@
 		8B0AD2B21ED29A31004BA499 /* WaterfallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD2B11ED29A31004BA499 /* WaterfallTests.swift */; };
 		8B0AD2BD1ED29A31004BA499 /* WaterfallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD2BC1ED29A31004BA499 /* WaterfallUITests.swift */; };
 		8B1694F21EDDAB0E00EDC912 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */; };
+		8B1694F41EDDB1B000EDC912 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F31EDDB1B000EDC912 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8B0AD2BC1ED29A31004BA499 /* WaterfallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallUITests.swift; sourceTree = "<group>"; };
 		8B0AD2BE1ED29A31004BA499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		8B1694F31EDDB1B000EDC912 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				8B0AD29C1ED29A31004BA499 /* AppDelegate.swift */,
 				8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */,
+				8B1694F31EDDB1B000EDC912 /* ViewController3.swift */,
 				8B0AD2A01ED29A31004BA499 /* Main.storyboard */,
 				8B0AD2A31ED29A31004BA499 /* Assets.xcassets */,
 				8B0AD2A51ED29A31004BA499 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			files = (
 				8B0AD29D1ED29A31004BA499 /* AppDelegate.swift in Sources */,
 				8B1694F21EDDAB0E00EDC912 /* ViewController2.swift in Sources */,
+				8B1694F41EDDB1B000EDC912 /* ViewController3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
