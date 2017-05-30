@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8B0AD29D1ED29A31004BA499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD29C1ED29A31004BA499 /* AppDelegate.swift */; };
-		8B0AD29F1ED29A31004BA499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD29E1ED29A31004BA499 /* ViewController.swift */; };
 		8B0AD2A21ED29A31004BA499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0AD2A01ED29A31004BA499 /* Main.storyboard */; };
 		8B0AD2A41ED29A31004BA499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B0AD2A31ED29A31004BA499 /* Assets.xcassets */; };
 		8B0AD2A71ED29A31004BA499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B0AD2A51ED29A31004BA499 /* LaunchScreen.storyboard */; };
 		8B0AD2B21ED29A31004BA499 /* WaterfallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD2B11ED29A31004BA499 /* WaterfallTests.swift */; };
 		8B0AD2BD1ED29A31004BA499 /* WaterfallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD2BC1ED29A31004BA499 /* WaterfallUITests.swift */; };
+		8B1694F21EDDAB0E00EDC912 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		8B0AD2991ED29A31004BA499 /* Waterfall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waterfall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0AD29C1ED29A31004BA499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B0AD29E1ED29A31004BA499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B0AD2A11ED29A31004BA499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B0AD2A31ED29A31004BA499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B0AD2A61ED29A31004BA499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		8B0AD2B81ED29A31004BA499 /* WaterfallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterfallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0AD2BC1ED29A31004BA499 /* WaterfallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallUITests.swift; sourceTree = "<group>"; };
 		8B0AD2BE1ED29A31004BA499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0AD29C1ED29A31004BA499 /* AppDelegate.swift */,
-				8B0AD29E1ED29A31004BA499 /* ViewController.swift */,
+				8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */,
 				8B0AD2A01ED29A31004BA499 /* Main.storyboard */,
 				8B0AD2A31ED29A31004BA499 /* Assets.xcassets */,
 				8B0AD2A51ED29A31004BA499 /* LaunchScreen.storyboard */,
@@ -260,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B0AD29F1ED29A31004BA499 /* ViewController.swift in Sources */,
 				8B0AD29D1ED29A31004BA499 /* AppDelegate.swift in Sources */,
+				8B1694F21EDDAB0E00EDC912 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
