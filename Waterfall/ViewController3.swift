@@ -32,6 +32,7 @@ class ViewController3: UIViewController {
         
         if classRoom.isEmpty{
             if className.isEmpty{
+            //not sending classInfo but sending nil!
             saveData.set(nil, forKey: "CLASSINFO")
             self.performSegue(withIdentifier: "toTable", sender: nil)
             }else {
