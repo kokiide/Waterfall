@@ -26,15 +26,25 @@ class ViewController3: UIViewController {
     
     
     @IBAction func saveIsTapped() {
-    
+
         className = classNameTF.text!
         classRoom = classRoomTF.text!
-        classInfo = className + " [" + classRoom + "]"
         
+        if classRoom.isEmpty{
+            if className.isEmpty{
+            classInfo = ""
+            saveData.set(classInfo, forKey: "CLASSINFO")
+            self.performSegue(withIdentifier: "toTable", sender: nil)
+            }else {
+        classInfo = className
+        saveData.set(classInfo, forKey: "CLASSINFO")
+        self.performSegue(withIdentifier: "toTable", sender: nil)
+            }}else {
+        classInfo = className + " [" + classRoom + "]"
         saveData.set(classInfo, forKey: "CLASSINFO")
         self.performSegue(withIdentifier: "toTable", sender: nil)
       /* ViewController2　にあるfunction //upDate() をここで実行したい    */
-    }
+        }}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

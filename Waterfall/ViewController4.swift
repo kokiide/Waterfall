@@ -29,8 +29,8 @@ class ViewController4: UIViewController {
         
         m2className = m2classNameTF.text!
         m2classRoom = m2classRoomTF.text!
-        if m2className.isEmpty {
-            m2classInfo = ""
+        if m2classRoom.isEmpty {
+            m2classInfo = m2className
             saveData.set(m2classInfo, forKey: "m2CLASSINFO")
             self.performSegue(withIdentifier: "toTablem2", sender: nil)
         }else {

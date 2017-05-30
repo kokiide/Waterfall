@@ -16,6 +16,7 @@
 		8B1694F21EDDAB0E00EDC912 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */; };
 		8B1694F41EDDB1B000EDC912 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F31EDDB1B000EDC912 /* ViewController3.swift */; };
 		8B1694F81EDDE36E00EDC912 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F71EDDE36E00EDC912 /* ViewController4.swift */; };
+		8B1694FB1EDDEDB800EDC912 /* m1AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694FA1EDDEDB800EDC912 /* m1AttendanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		8B1694F31EDDB1B000EDC912 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		8B1694F71EDDE36E00EDC912 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
+		8B1694FA1EDDEDB800EDC912 /* m1AttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = m1AttendanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				8B1694F11EDDAB0E00EDC912 /* ViewController2.swift */,
 				8B1694F31EDDB1B000EDC912 /* ViewController3.swift */,
 				8B1694F71EDDE36E00EDC912 /* ViewController4.swift */,
+				8B1694FA1EDDEDB800EDC912 /* m1AttendanceViewController.swift */,
 				8B0AD2A01ED29A31004BA499 /* Main.storyboard */,
 				8B0AD2A31ED29A31004BA499 /* Assets.xcassets */,
 				8B0AD2A51ED29A31004BA499 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			files = (
 				8B0AD29D1ED29A31004BA499 /* AppDelegate.swift in Sources */,
 				8B1694F21EDDAB0E00EDC912 /* ViewController2.swift in Sources */,
+				8B1694FB1EDDEDB800EDC912 /* m1AttendanceViewController.swift in Sources */,
 				8B1694F41EDDB1B000EDC912 /* ViewController3.swift in Sources */,
 				8B1694F81EDDE36E00EDC912 /* ViewController4.swift in Sources */,
 			);

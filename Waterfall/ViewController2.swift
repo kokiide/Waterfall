@@ -173,7 +173,12 @@ class ViewController2: UIViewController {
     }
     
     @IBAction func m1Tapped () {
+        if saveData.string(forKey: "CLASSINFO") != nil{
+        self.performSegue(withIdentifier: "m1Att", sender: nil)
+        }else {
+            //code
         self.performSegue(withIdentifier: "m1AddClass", sender: nil)
+    }
     }
 
     /*
