@@ -56,7 +56,7 @@
                                     <navigationItem title="Monday 1st Period" id="1Sl-m5-1aV">
                                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CoJ-9l-Aj1">
                                             <connections>
-                                                <segue destination="B6x-XH-EPG" kind="show" id="347-Fa-oDY"/>
+                                                <segue destination="B6x-XH-EPG" kind="show" identifier="backToTable" id="347-Fa-oDY"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="gw0-oP-ezB">
@@ -73,11 +73,12 @@
                     <connections>
                         <outlet property="classNameTF" destination="gW5-zW-cPj" id="k8c-8F-yHq"/>
                         <outlet property="classRoomTF" destination="Rte-po-Fzb" id="gJR-81-Js2"/>
+                        <segue destination="B6x-XH-EPG" kind="presentation" identifier="toTable" id="N6q-Hd-NKN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJP-AO-iPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="728"/>
+            <point key="canvasLocation" x="2325.5999999999999" y="785.75712143928047"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="WFj-ad-Q0S">
@@ -95,10 +96,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irx-Ri-SNg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-62-r60">
                                 <rect key="frame" x="48" y="96" width="46" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="m1isTapped" destination="B6x-XH-EPG" eventType="touchUpInside" id="Xog-vX-MGy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1st Mon" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irx-Ri-SNg">
+                                <rect key="frame" x="48" y="96" width="46" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -389,14 +398,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geh-62-r60">
-                                <rect key="frame" x="48" y="96" width="46" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <segue destination="Ol2-iY-dFh" kind="show" id="RPz-cF-1av"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3s-hD-KSl">
                                 <rect key="frame" x="48" y="191" width="46" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -602,6 +603,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irh-b9-yuO">
+                                <rect key="frame" x="6" y="34" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UpDate!"/>
+                                <connections>
+                                    <action selector="upDate" destination="B6x-XH-EPG" eventType="touchUpInside" id="P8u-j3-jZf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -666,6 +675,7 @@
                         <outlet property="w4" destination="nf0-xi-ie0" id="gjT-7z-cES"/>
                         <outlet property="w5" destination="5xS-Gy-ppj" id="1AB-hV-Mpn"/>
                         <outlet property="w6" destination="Y3V-qz-d9j" id="xlO-tz-4ls"/>
+                        <segue destination="Ol2-iY-dFh" kind="presentation" identifier="m1toEnter" id="NAs-Rg-Vjh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rvW-h5-Zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -676,4 +686,7 @@
     <resources>
         <image name="chart" width="667" height="1186"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="N6q-Hd-NKN"/>
+    </inferredMetricsTieBreakers>
 </document>

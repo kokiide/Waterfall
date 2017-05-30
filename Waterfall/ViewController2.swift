@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController2: UIViewController {
     
+    let saveData = UserDefaults.standard
+    var classInfo = ""
+    
+    
     //buttons
     
     @IBOutlet var m1: UIButton!
@@ -130,14 +134,22 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        }
+
         
 
         // Do any additional setup after loading the view.
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func m1isTapped() {
+        
+    if saveData.string(forKey: "CLASSINFO")!.isEmpty {
+        self.performSegue(withIdentifier: "m1toEnter", sender: nil)
+    }
     }
     
 
@@ -150,5 +162,12 @@ class ViewController2: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func upDate() {
+        
+        classInfo = saveData.string(forKey: "CLASSINFO")!
+        lm1.numberOfLines = 0
+        lm1.text = classInfo
+    }
+    
+    
 }

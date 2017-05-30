@@ -24,13 +24,15 @@ class ViewController3: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func saveIsTapped() {
     
-        className = classRoomTF.text!
+        className = classNameTF.text!
         classRoom = classRoomTF.text!
-        classInfo = className + classRoom
+        classInfo = className + " [" + classRoom + "]"
         
         saveData.set(classInfo, forKey: "CLASSINFO")
+        self.performSegue(withIdentifier: "toTable", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
