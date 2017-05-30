@@ -159,12 +159,17 @@ class ViewController2: UIViewController {
     @IBAction func upDate() {
         
         if saveData.string(forKey: "CLASSINFO") != nil{
-        
-        /*saveDataがからの時、alertを表示*/
-        //alert codeを入力
             
-/* Alertの方法（テンプレ）下記
-             // アラートを作成
+            classInfo = saveData.string(forKey: "CLASSINFO")!
+            lm1.numberOfLines = 0
+            lm1.text = classInfo
+            
+        }else {
+            /*saveDataがからの時、alertを表示*/
+            //alert codeを入力
+            
+            // Alertの方法（テンプレ）下記
+            // アラートを作成
             let alert = UIAlertController(
                 title: "タイトル",
                 message: "アラートの本文",
@@ -175,12 +180,6 @@ class ViewController2: UIViewController {
             
             // アラート表示
             self.present(alert, animated: true, completion: nil)
-            
-            */
-        }else {
-        classInfo = saveData.string(forKey: "CLASSINFO")!
-        lm1.numberOfLines = 0
-        lm1.text = classInfo
     }
     }
     
