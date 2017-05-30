@@ -166,32 +166,5 @@ class ViewController2: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func upDate() {
-        
-        if saveData.string(forKey: "CLASSINFO") != nil{
-            
-            classInfo = saveData.string(forKey: "CLASSINFO")!
-            lm1.numberOfLines = 0
-            lm1.text = classInfo
-            
-        }else {
-            /*saveDataがからの時、alertを表示*/
-            //alert codeを入力
-            
-            // Alertの方法（テンプレ）下記
-            // アラートを作成
-            let alert = UIAlertController(
-                title: "タイトル",
-                message: "アラートの本文",
-                preferredStyle: .alert)
-            
-            // アラートにボタンをつける
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            
-            // アラート表示
-            self.present(alert, animated: true, completion: nil)
-    }
-    }
-    
     
 }
