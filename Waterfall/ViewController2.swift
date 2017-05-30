@@ -171,6 +171,10 @@ class ViewController2: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func m1Tapped () {
+        self.performSegue(withIdentifier: "m1AddClass", sender: nil)
+    }
 
     /*
     // MARK: - Navigation
