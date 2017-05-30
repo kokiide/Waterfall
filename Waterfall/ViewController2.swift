@@ -12,6 +12,7 @@ class ViewController2: UIViewController {
     
     let saveData = UserDefaults.standard
     var classInfo = ""
+    var emptyChecker = ""
     
     
     //buttons
@@ -145,13 +146,6 @@ class ViewController2: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func m1isTapped() {
-        
-    if saveData.string(forKey: "CLASSINFO")!.isEmpty {
-        self.performSegue(withIdentifier: "m1toEnter", sender: nil)
-    }
-    }
-    
 
     /*
     // MARK: - Navigation
@@ -164,9 +158,30 @@ class ViewController2: UIViewController {
     */
     @IBAction func upDate() {
         
+        if saveData.string(forKey: "CLASSINFO") != nil{
+        
+        /*saveDataがからの時、alertを表示*/
+        //alert codeを入力
+            
+/* Alertの方法（テンプレ）下記
+             // アラートを作成
+            let alert = UIAlertController(
+                title: "タイトル",
+                message: "アラートの本文",
+                preferredStyle: .alert)
+            
+            // アラートにボタンをつける
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            // アラート表示
+            self.present(alert, animated: true, completion: nil)
+            
+            */
+        }else {
         classInfo = saveData.string(forKey: "CLASSINFO")!
         lm1.numberOfLines = 0
         lm1.text = classInfo
+    }
     }
     
     
