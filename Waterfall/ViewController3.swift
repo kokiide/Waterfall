@@ -33,6 +33,7 @@ class ViewController3: UIViewController {
         
         saveData.set(classInfo, forKey: "CLASSINFO")
         self.performSegue(withIdentifier: "toTable", sender: nil)
+      /* ViewController2　にあるfunction //upDate() をここで実行したい    */
     }
 
     override func didReceiveMemoryWarning() {

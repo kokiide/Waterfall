@@ -135,6 +135,16 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if saveData.string(forKey: "CLASSINFO") != nil{
+            
+            classInfo = saveData.string(forKey: "CLASSINFO")!
+            lm1.numberOfLines = 0
+            lm1.text = classInfo
+            
+        }else {
+            lm1.numberOfLines = 0
+            lm1.text = ""
+        }
         }
 
         
