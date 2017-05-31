@@ -70,7 +70,7 @@ class AttendanceViewController: UIViewController {
         attNum = attNum + 1
         att.text = String(attNum)
         
-        saveData.set(attNum, forKey: "mon1attNum")
+        saveData.set(attNum, forKey: weekTime[pageDeciderRecieve] + "attNum")
 //        calculateRate()
     }
     
@@ -78,21 +78,21 @@ class AttendanceViewController: UIViewController {
         attNum = attNum - 1
         att.text = String(attNum)
         
-        saveData.set(attNum, forKey: "mon1attNum")
+        saveData.set(attNum, forKey: weekTime[pageDeciderRecieve] + "attNum")
 //        calculateRate()
     }
     
     @IBAction func absPlus() {
         absNum = absNum + 1
         abs.text = String(absNum)
-        saveData.set(absNum, forKey: "mon1absNum")
+        saveData.set(absNum, forKey: weekTime[pageDeciderRecieve] + "absNum")
         //calculateRate()
     }
     
     @IBAction func absMinus() {
         absNum = absNum - 1
         abs.text = String(absNum)
-        saveData.set(absNum, forKey: "mon1absNum")
+        saveData.set(absNum, forKey: weekTime[pageDeciderRecieve] + "absNum")
         //calculateRate()
     }
     
