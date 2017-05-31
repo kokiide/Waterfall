@@ -33,23 +33,23 @@ class AttendanceViewController: UIViewController {
         pageDeciderRecieve = saveData.integer(forKey: "PAGEDECIDER") /*番号をもらう */
         barTitle.text = saveData.string(forKey: weekTime[pageDeciderRecieve] + "CLASSINFO")
         
-        if saveData.string(forKey: "mon1attNum") != nil {
-            if saveData.string(forKey: "mon1absNum") != nil {
-                absNum = saveData.integer(forKey: "mon1absNum")
+        if saveData.string(forKey: weekTime[pageDeciderRecieve] + "attNum") != nil {
+            if saveData.string(forKey: weekTime[pageDeciderRecieve] + "absNum") != nil {
+                absNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "absNum")
                 abs.text = String(absNum)
 
-                attNum = saveData.integer(forKey: "mon1attNum")
+                attNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "attNum")
                 att.text = String(attNum)
-        } else if saveData.string(forKey: "mon1absNum") == nil{
-                attNum = saveData.integer(forKey: "mon1attNum")
+        } else if saveData.string(forKey: weekTime[pageDeciderRecieve] + "absNum") == nil{
+                attNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "attNum")
                 att.text = String(attNum)
                 
                 absNum = 0
                 abs.text = String(absNum)
-            }}else if saveData.string(forKey: "mon1absNum") != nil {
+            }}else if saveData.string(forKey: weekTime[pageDeciderRecieve] + "absNum") != nil {
             attNum = 0
             att.text = String(attNum)
-            absNum = saveData.integer(forKey: "mon1absNum")
+            absNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "absNum")
             abs.text = String(absNum)
         }else{
             attNum = 0
@@ -108,14 +108,14 @@ class AttendanceViewController: UIViewController {
 */
     
     
-    /*REMEMBER TO DEAL WITH THIS CODE⬇️⬇️⬇️⬇️⬇️⬇️⬇️ PERHAPS NEED'S PAGEDICIDER SENDING*/
-    @IBAction func m1changeClassTapped() {
+    /*REMEMBER TO CHECK OUT THIS CODE WHEN ERRORS OCCUARS. PERHAPS NEED'S PAGEDICIDER SENDING*/
+    @IBAction func changeClassTapped() {
         attNum = 0
         absNum = 0
-        saveData.set(attNum, forKey: "mon1attNum")
-        saveData.set(absNum, forKey: "mon1absNum")
+        saveData.set(attNum, forKey: weekTime[pageDeciderRecieve] + "attNum")
+        saveData.set(absNum, forKey: weekTime[pageDeciderRecieve] + "absNum")
         
-        self.performSegue(withIdentifier: "m1ChangeClass", sender: nil)
+        self.performSegue(withIdentifier: "ChangeClass", sender: nil)
     }
     
 

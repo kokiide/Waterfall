@@ -193,7 +193,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Class"/>
                                 <connections>
-                                    <action selector="m1changeClassTapped" destination="q7E-iB-huX" eventType="touchUpInside" id="x7u-0M-J6e"/>
+                                    <action selector="changeClassTapped" destination="q7E-iB-huX" eventType="touchUpInside" id="2at-ql-e4D"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sj-85-oAl">
@@ -212,7 +212,7 @@
                         <outlet property="att" destination="R6T-9Y-9cj" id="npp-ur-22d"/>
                         <outlet property="attRate" destination="Wtq-98-444" id="49H-aW-MqZ"/>
                         <outlet property="barTitle" destination="0GC-f6-fAX" id="pfR-8t-36r"/>
-                        <segue destination="h1c-Bp-fOb" kind="presentation" identifier="m1ChangeClass" id="4db-jL-0I5"/>
+                        <segue destination="h1c-Bp-fOb" kind="presentation" identifier="ChangeClass" id="4db-jL-0I5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeD-uj-vMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1053,7 +1053,7 @@
         <image name="chart" width="667" height="1186"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xlt-32-Ttr"/>
-        <segue reference="FWa-a7-N4b"/>
+        <segue reference="4db-jL-0I5"/>
+        <segue reference="kHX-zg-uZb"/>
     </inferredMetricsTieBreakers>
 </document>

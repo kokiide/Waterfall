@@ -11,8 +11,48 @@ import UIKit
 class TimeTableViewController: UIViewController {
     
     let saveData = UserDefaults.standard
-    var classInfo = ""
+    var m1classInfo = ""
     var m2classInfo = ""
+    var m3classInfo = ""
+    var m4classInfo = ""
+    var m5classInfo = ""
+    var m6classInfo = ""
+    var m7classInfo = ""
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     var pageDecider : Int = 100
     
     
@@ -139,18 +179,16 @@ class TimeTableViewController: UIViewController {
         
         //mon1
         if saveData.string(forKey: "mon1CLASSINFO") != nil{
-            
-            classInfo = saveData.string(forKey: "mon1CLASSINFO")!
+            m1classInfo = saveData.string(forKey: "mon1CLASSINFO")!
             lm1.numberOfLines = 0
-            lm1.text = classInfo
-            
-        }else {
+            lm1.text = m1classInfo
+            }else {
             lm1.numberOfLines = 0
             lm1.text = ""
         }
+        
         //mon2
         if saveData.string(forKey: "mon2CLASSINFO") != nil{
-            
             m2classInfo = saveData.string(forKey: "mon2CLASSINFO")!
             lm2.numberOfLines = 0
             lm2.text = m2classInfo
