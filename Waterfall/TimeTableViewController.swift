@@ -194,7 +194,7 @@ class TimeTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //mon1
+//mon1
         if saveData.string(forKey: "mon1CLASSINFO") != nil{
             m1classInfo = saveData.string(forKey: "mon1CLASSINFO")!
             lm1.numberOfLines = 0
@@ -204,7 +204,7 @@ class TimeTableViewController: UIViewController {
             lm1.text = ""
         }
         
-        //mon2
+//mon2
         if saveData.string(forKey: "mon2CLASSINFO") != nil{
             m2classInfo = saveData.string(forKey: "mon2CLASSINFO")!
             lm2.numberOfLines = 0
