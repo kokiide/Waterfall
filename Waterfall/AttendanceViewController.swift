@@ -16,7 +16,7 @@ class AttendanceViewController: UIViewController {
     @IBOutlet var attRate: UILabel!
     let saveData = UserDefaults.standard
     var nameofClass = ""
-    let weekTime = ["mon1","mon2"]
+    let weekTime = ["mon1","mon2","mon3"]
     // let weekTimeは必ずAddClassViewControllerのものと同値にすることを忘れない!解読のための値をrecieveするのに必要だから。
     
     var attNum: Int = 0

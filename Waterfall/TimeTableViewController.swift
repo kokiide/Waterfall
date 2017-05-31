@@ -214,6 +214,16 @@ class TimeTableViewController: UIViewController {
             lm2.text = ""
         }
         
+//mon3
+        if saveData.string(forKey: "mon3CLASSINFO") != nil{
+            m3classInfo = saveData.string(forKey: "mon3CLASSINFO")!
+            lm3.numberOfLines = 0
+            lm3.text = m3classInfo
+        }else {
+            lm3.numberOfLines = 0
+            lm3.text = ""
+        }
+        
         
         
         }
@@ -228,21 +238,20 @@ class TimeTableViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-//m1Tapped positive
+//m1 tapped code
     @IBAction func m1Tapped () {
         if saveData.string(forKey: "mon1CLASSINFO") == nil{
         pageDecider = 0
         saveData.set( pageDecider, forKey: "PAGEDECIDER")
         self.performSegue(withIdentifier: "AddClass", sender: nil)
         }else {
-        /*WORKING ON THIS!!!!!!!!!!!!!!!!!!!!*/
         pageDecider = 0
         saveData.set( pageDecider,forKey: "PAGEDECIDER")
         self.performSegue(withIdentifier: "Attendance", sender: nil)
     }
     }
     
-//m2Tapped Test
+//m2 tapped code
     @IBAction func m2Tapped () {
         if saveData.string(forKey: "mon2CLASSINFO") == nil{
             pageDecider = 1
@@ -254,6 +263,113 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
+    
+    //m3 tapped code
+    @IBAction func m3Tapped () {
+        if saveData.string(forKey: "mon3CLASSINFO") == nil{
+            pageDecider = 2
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 2
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation

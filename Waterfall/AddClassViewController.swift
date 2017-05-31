@@ -20,7 +20,7 @@ class AddClassViewController: UIViewController {
     let saveData = UserDefaults.standard
     var pageDeciderRecieve : Int = 100
     
-    let weekTime = ["mon1","mon2"]
+    let weekTime = ["mon1","mon2","mon3"]
     
     
 
