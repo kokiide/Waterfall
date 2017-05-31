@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class TimeTableViewController: UIViewController {
     
     let saveData = UserDefaults.standard
     var classInfo = ""
     var m2classInfo = ""
-    var pageDecider : Int = 0
+    var pageDecider : Int = 100
     
     
     //buttons
@@ -175,10 +175,14 @@ class ViewController2: UIViewController {
     
     @IBAction func m1Tapped () {
         if saveData.string(forKey: "m1CLASSINFO") == nil{
-        self.performSegue(withIdentifier: "m1AddClass", sender: nil)
+        pageDecider = 0
+        saveData.set( pageDecider, forKey: "PAGEDECIDER")
+        self.performSegue(withIdentifier: "AddClass", sender: nil)
         }else {
-            //code
-        self.performSegue(withIdentifier: "m1Att", sender: nil)
+        /*WORKING ON THIS!!!!!!!!!!!!!!!!!!!!*/
+        pageDecider = 0
+        saveData.set( pageDecider,forKey: "PAGEDECIDER")
+        self.performSegue(withIdentifier: "Attendance", sender: nil)
     }
     }
 

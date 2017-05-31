@@ -8,13 +8,15 @@
 
 import UIKit
 
-class m1AttendanceViewController: UIViewController {
+class AttendanceViewController: UIViewController {
     
     @IBOutlet var barTitle: UILabel!
     @IBOutlet var att: UILabel!
     @IBOutlet var abs: UILabel!
     @IBOutlet var attRate: UILabel!
     let saveData = UserDefaults.standard
+    
+
     
     var attNum: Int = 0
     var absNum: Int = 0
@@ -63,7 +65,7 @@ class m1AttendanceViewController: UIViewController {
         att.text = String(attNum)
         
         saveData.set(attNum, forKey: "m1attNum")
-        calculateRate()
+//        calculateRate()
     }
     
     @IBAction func attMinus(){
@@ -71,24 +73,24 @@ class m1AttendanceViewController: UIViewController {
         att.text = String(attNum)
         
         saveData.set(attNum, forKey: "m1attNum")
-        calculateRate()
+//        calculateRate()
     }
     
     @IBAction func absPlus() {
         absNum = absNum + 1
         abs.text = String(absNum)
         saveData.set(absNum, forKey: "m1absNum")
-        calculateRate()
+        //calculateRate()
     }
     
     @IBAction func absMinus() {
         absNum = absNum - 1
         abs.text = String(absNum)
         saveData.set(absNum, forKey: "m1absNum")
-        calculateRate()
+        //calculateRate()
     }
     
-    func calculateRate() {
+/*    func calculateRate() {
     absNum = saveData.integer(forKey: "m1absNum")
     attNum = saveData.integer(forKey: "m1attNum")
     total = absNum + attNum
@@ -97,8 +99,13 @@ class m1AttendanceViewController: UIViewController {
     attRate.text = String(calculation) + "%"
         saveData.set(calculation, forKey: "m1attRateNum")
     }
-    
+*/
     @IBAction func m1changeClassTapped() {
+        attNum = 0
+        absNum = 0
+        saveData.set(attNum, forKey: "m1attNum")
+        saveData.set(absNum, forKey: "m1absNum")
+        
         self.performSegue(withIdentifier: "m1ChangeClass", sender: nil)
     }
     

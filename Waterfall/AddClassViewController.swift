@@ -8,20 +8,29 @@
 
 import UIKit
 
-class ViewController3: UIViewController {
+class AddClassViewController: UIViewController {
     
     @IBOutlet var classNameTF: UITextField!
     @IBOutlet var classRoomTF: UITextField!
+    @IBOutlet var tableTime: UILabel!
     
     var className = ""
     var classRoom = ""
     var classInfo = ""
     let saveData = UserDefaults.standard
+    var pageDeciderRecieve : Int = 100
+    
+    let weekTime = ["mon1","mon2"]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+       pageDeciderRecieve = saveData.integer(forKey: "PAGEDECIDER")
+       tableTime.text = weekTime[pageDeciderRecieve]
     }
     
     
