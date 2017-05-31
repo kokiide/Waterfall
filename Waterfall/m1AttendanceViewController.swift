@@ -10,6 +10,7 @@ import UIKit
 
 class m1AttendanceViewController: UIViewController {
     
+    @IBOutlet var barTitle: UILabel!
     @IBOutlet var att: UILabel!
     @IBOutlet var abs: UILabel!
     @IBOutlet var attRate: UILabel!

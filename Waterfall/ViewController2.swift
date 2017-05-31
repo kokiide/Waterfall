@@ -13,6 +13,7 @@ class ViewController2: UIViewController {
     let saveData = UserDefaults.standard
     var classInfo = ""
     var m2classInfo = ""
+    var pageDecider : Int = 0
     
     
     //buttons
