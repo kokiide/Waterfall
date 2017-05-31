@@ -138,9 +138,9 @@ class TimeTableViewController: UIViewController {
         super.viewDidLoad()
         
         //mon1
-        if saveData.string(forKey: "m1CLASSINFO") != nil{
+        if saveData.string(forKey: "mon1CLASSINFO") != nil{
             
-            classInfo = saveData.string(forKey: "m1CLASSINFO")!
+            classInfo = saveData.string(forKey: "mon1CLASSINFO")!
             lm1.numberOfLines = 0
             lm1.text = classInfo
             
@@ -174,7 +174,7 @@ class TimeTableViewController: UIViewController {
     }
     
     @IBAction func m1Tapped () {
-        if saveData.string(forKey: "m1CLASSINFO") == nil{
+        if saveData.string(forKey: "mon1CLASSINFO") == nil{
         pageDecider = 0
         saveData.set( pageDecider, forKey: "PAGEDECIDER")
         self.performSegue(withIdentifier: "AddClass", sender: nil)
