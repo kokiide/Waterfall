@@ -149,9 +149,9 @@ class TimeTableViewController: UIViewController {
             lm1.text = ""
         }
         //mon2
-        if saveData.string(forKey: "m2CLASSINFO") != nil{
+        if saveData.string(forKey: "mon2CLASSINFO") != nil{
             
-            m2classInfo = saveData.string(forKey: "m2CLASSINFO")!
+            m2classInfo = saveData.string(forKey: "mon2CLASSINFO")!
             lm2.numberOfLines = 0
             lm2.text = m2classInfo
         }else {
@@ -172,7 +172,8 @@ class TimeTableViewController: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
-    
+
+//m1Tapped positive
     @IBAction func m1Tapped () {
         if saveData.string(forKey: "mon1CLASSINFO") == nil{
         pageDecider = 0
@@ -184,6 +185,19 @@ class TimeTableViewController: UIViewController {
         saveData.set( pageDecider,forKey: "PAGEDECIDER")
         self.performSegue(withIdentifier: "Attendance", sender: nil)
     }
+    }
+    
+//m2Tapped Test
+    @IBAction func m2Tapped () {
+        if saveData.string(forKey: "mon2CLASSINFO") == nil{
+            pageDecider = 1
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 1
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
     }
 
     /*
