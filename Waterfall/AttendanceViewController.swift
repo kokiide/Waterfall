@@ -15,35 +15,41 @@ class AttendanceViewController: UIViewController {
     @IBOutlet var abs: UILabel!
     @IBOutlet var attRate: UILabel!
     let saveData = UserDefaults.standard
-    
-
+    var nameofClass = ""
+    let weekTime = ["mon1","mon2"]
+    // let weekTimeは必ずAddClassViewControllerのものと同値にすることを忘れない!解読のための値をrecieveするのに必要だから。
     
     var attNum: Int = 0
     var absNum: Int = 0
     var attRateNum: Int = 0
     var total: Int = 0
     var calculation = 0.0
+    
+    var pageDeciderRecieve : Int = 100
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if saveData.string(forKey: "m1attNum") != nil {
-            if saveData.string(forKey: "m1absNum") != nil {
-                absNum = saveData.integer(forKey: "m1absNum")
+        pageDeciderRecieve = saveData.integer(forKey: "PAGEDECIDER") /*番号をもらう */
+        barTitle.text = saveData.string(forKey: weekTime[pageDeciderRecieve] + "CLASSINFO")
+        
+        if saveData.string(forKey: "mon1attNum") != nil {
+            if saveData.string(forKey: "mon1absNum") != nil {
+                absNum = saveData.integer(forKey: "mon1absNum")
                 abs.text = String(absNum)
 
-                attNum = saveData.integer(forKey: "m1attNum")
+                attNum = saveData.integer(forKey: "mon1attNum")
                 att.text = String(attNum)
-        } else if saveData.string(forKey: "m1absNum") == nil{
-                attNum = saveData.integer(forKey: "m1attNum")
+        } else if saveData.string(forKey: "mon1absNum") == nil{
+                attNum = saveData.integer(forKey: "mon1attNum")
                 att.text = String(attNum)
                 
                 absNum = 0
                 abs.text = String(absNum)
-            }}else if saveData.string(forKey: "m1absNum") != nil {
+            }}else if saveData.string(forKey: "mon1absNum") != nil {
             attNum = 0
             att.text = String(attNum)
-            absNum = saveData.integer(forKey: "m1absNum")
+            absNum = saveData.integer(forKey: "mon1absNum")
             abs.text = String(absNum)
         }else{
             attNum = 0
@@ -64,7 +70,7 @@ class AttendanceViewController: UIViewController {
         attNum = attNum + 1
         att.text = String(attNum)
         
-        saveData.set(attNum, forKey: "m1attNum")
+        saveData.set(attNum, forKey: "mon1attNum")
 //        calculateRate()
     }
     
@@ -72,21 +78,21 @@ class AttendanceViewController: UIViewController {
         attNum = attNum - 1
         att.text = String(attNum)
         
-        saveData.set(attNum, forKey: "m1attNum")
+        saveData.set(attNum, forKey: "mon1attNum")
 //        calculateRate()
     }
     
     @IBAction func absPlus() {
         absNum = absNum + 1
         abs.text = String(absNum)
-        saveData.set(absNum, forKey: "m1absNum")
+        saveData.set(absNum, forKey: "mon1absNum")
         //calculateRate()
     }
     
     @IBAction func absMinus() {
         absNum = absNum - 1
         abs.text = String(absNum)
-        saveData.set(absNum, forKey: "m1absNum")
+        saveData.set(absNum, forKey: "mon1absNum")
         //calculateRate()
     }
     
@@ -100,11 +106,14 @@ class AttendanceViewController: UIViewController {
         saveData.set(calculation, forKey: "m1attRateNum")
     }
 */
+    
+    
+    /*REMEMBER TO DEAL WITH THIS CODE⬇️⬇️⬇️⬇️⬇️⬇️⬇️ PERHAPS NEED'S PAGEDICIDER SENDING*/
     @IBAction func m1changeClassTapped() {
         attNum = 0
         absNum = 0
-        saveData.set(attNum, forKey: "m1attNum")
-        saveData.set(absNum, forKey: "m1absNum")
+        saveData.set(attNum, forKey: "mon1attNum")
+        saveData.set(absNum, forKey: "mon1absNum")
         
         self.performSegue(withIdentifier: "m1ChangeClass", sender: nil)
     }
