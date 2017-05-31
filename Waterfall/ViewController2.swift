@@ -138,9 +138,9 @@ class ViewController2: UIViewController {
         super.viewDidLoad()
         
         //mon1
-        if saveData.string(forKey: "CLASSINFO") != nil{
+        if saveData.string(forKey: "m1CLASSINFO") != nil{
             
-            classInfo = saveData.string(forKey: "CLASSINFO")!
+            classInfo = saveData.string(forKey: "m1CLASSINFO")!
             lm1.numberOfLines = 0
             lm1.text = classInfo
             
@@ -174,7 +174,7 @@ class ViewController2: UIViewController {
     }
     
     @IBAction func m1Tapped () {
-        if saveData.string(forKey: "CLASSINFO") == nil{
+        if saveData.string(forKey: "m1CLASSINFO") == nil{
         self.performSegue(withIdentifier: "m1AddClass", sender: nil)
         }else {
             //code

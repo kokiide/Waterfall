@@ -33,15 +33,15 @@ class ViewController3: UIViewController {
         if classRoom.isEmpty{
             if className.isEmpty{
             //not sending classInfo but sending nil!
-            saveData.set(nil, forKey: "CLASSINFO")
+            saveData.set(nil, forKey: "m1CLASSINFO")
             self.performSegue(withIdentifier: "toTable", sender: nil)
             }else {
         classInfo = className
-        saveData.set(classInfo, forKey: "CLASSINFO")
+        saveData.set(classInfo, forKey: "m1CLASSINFO")
         self.performSegue(withIdentifier: "toTable", sender: nil)
             }}else {
         classInfo = className + " [" + classRoom + "]"
-        saveData.set(classInfo, forKey: "CLASSINFO")
+        saveData.set(classInfo, forKey: "m1CLASSINFO")
         self.performSegue(withIdentifier: "toTable", sender: nil)
       /* ViewController2　にあるfunction //upDate() をここで実行したい    */
         }}
