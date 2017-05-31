@@ -254,7 +254,7 @@ class TimeTableViewController: UIViewController {
             lm6.text = ""
         }
 //mon7
-/*        if saveData.string(forKey: "mon7CLASSINFO") != nil{
+        if saveData.string(forKey: "mon7CLASSINFO") != nil{
             m7classInfo = saveData.string(forKey: "mon7CLASSINFO")!
             lm7.numberOfLines = 0
             lm7.text = m7classInfo
@@ -262,7 +262,7 @@ class TimeTableViewController: UIViewController {
             lm7.numberOfLines = 0
             lm7.text = ""
         }
-        */
+        
         
 //tue1
         if saveData.string(forKey: "tue1CLASSINFO") != nil{
@@ -320,14 +320,14 @@ class TimeTableViewController: UIViewController {
             lt6.text = ""
         }
 //tue7
-/*        if saveData.string(forKey: "tue7CLASSINFO") != nil{
+        if saveData.string(forKey: "tue7CLASSINFO") != nil{
             t7classInfo = saveData.string(forKey: "tue7CLASSINFO")!
             lt7.numberOfLines = 0
             lt7.text = t7classInfo
         }else {
             lt7.numberOfLines = 0
             lt7.text = ""
-        }*/
+        }
         
 //wed1
         if saveData.string(forKey: "wed1CLASSINFO") != nil{
@@ -384,14 +384,14 @@ class TimeTableViewController: UIViewController {
             lw6.text = ""
         }
 //wed7
-/*        if saveData.string(forKey: "wed7CLASSINFO") != nil{
+        if saveData.string(forKey: "wed7CLASSINFO") != nil{
             w7classInfo = saveData.string(forKey: "wed7CLASSINFO")!
             lw7.numberOfLines = 0
             lw7.text = w7classInfo
         }else {
             lw7.numberOfLines = 0
             lw7.text = ""
-        } */
+        }
 
 //thu1
         if saveData.string(forKey: "thu1CLASSINFO") != nil{
@@ -402,123 +402,249 @@ class TimeTableViewController: UIViewController {
             lth1.numberOfLines = 0
             lth1.text = ""
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+//thu2
+        if saveData.string(forKey: "thu2CLASSINFO") != nil{
+            th2classInfo = saveData.string(forKey: "thu2CLASSINFO")!
+            lth2.numberOfLines = 0
+            lth2.text = th2classInfo
+        }else {
+            lth2.numberOfLines = 0
+            lth2.text = ""
+        }
+//thu3
+        if saveData.string(forKey: "thu3CLASSINFO") != nil{
+            th3classInfo = saveData.string(forKey: "thu3CLASSINFO")!
+            lth3.numberOfLines = 0
+            lth3.text = th3classInfo
+        }else {
+            lth3.numberOfLines = 0
+            lth3.text = ""
+        }
+//thu4
+        if saveData.string(forKey: "thu4CLASSINFO") != nil{
+            th4classInfo = saveData.string(forKey: "thu4CLASSINFO")!
+            lth4.numberOfLines = 0
+            lth4.text = th4classInfo
+        }else {
+            lth4.numberOfLines = 0
+            lth4.text = ""
+        }
+//thu5
+        if saveData.string(forKey: "thu5CLASSINFO") != nil{
+            th5classInfo = saveData.string(forKey: "thu5CLASSINFO")!
+            lth5.numberOfLines = 0
+            lth5.text = th5classInfo
+        }else {
+            lth5.numberOfLines = 0
+            lth5.text = ""
+        }
+//thu6
+        if saveData.string(forKey: "thu6CLASSINFO") != nil{
+            th6classInfo = saveData.string(forKey: "thu6CLASSINFO")!
+            lth6.numberOfLines = 0
+            lth6.text = th6classInfo
+        }else {
+            lth6.numberOfLines = 0
+            lth6.text = ""
+        }
+//thu7
+        if saveData.string(forKey: "thu7CLASSINFO") != nil{
+            th7classInfo = saveData.string(forKey: "thu7CLASSINFO")!
+            lth7.numberOfLines = 0
+            lth7.text = th7classInfo
+        }else {
+            lth7.numberOfLines = 0
+            lth7.text = ""
+        }
+//fri1
+        if saveData.string(forKey: "fri1CLASSINFO") != nil{
+            f1classInfo = saveData.string(forKey: "fri1CLASSINFO")!
+            lf1.numberOfLines = 0
+            lf1.text = f1classInfo
+        }else {
+            lf1.numberOfLines = 0
+            lf1.text = ""
+        }
+//fri2
+        if saveData.string(forKey: "fri2CLASSINFO") != nil{
+            f2classInfo = saveData.string(forKey: "fri2CLASSINFO")!
+            lf2.numberOfLines = 0
+            lf2.text = f2classInfo
+        }else {
+            lf2.numberOfLines = 0
+            lf2.text = ""
+        }
+//fri3
+        if saveData.string(forKey: "fri3CLASSINFO") != nil{
+            f3classInfo = saveData.string(forKey: "fri3CLASSINFO")!
+            lf3.numberOfLines = 0
+            lf3.text = f3classInfo
+        }else {
+            lf3.numberOfLines = 0
+            lf3.text = ""
+        }
+//fri4
+        if saveData.string(forKey: "fri4CLASSINFO") != nil{
+            f4classInfo = saveData.string(forKey: "fri4CLASSINFO")!
+            lf4.numberOfLines = 0
+            lf4.text = f4classInfo
+        }else {
+            lf4.numberOfLines = 0
+            lf4.text = ""
+        }
+//fri5
+        if saveData.string(forKey: "fri5CLASSINFO") != nil{
+            f5classInfo = saveData.string(forKey: "fri5CLASSINFO")!
+            lf5.numberOfLines = 0
+            lf5.text = f5classInfo
+        }else {
+            lf5.numberOfLines = 0
+            lf5.text = ""
+        }
+//fri6
+        if saveData.string(forKey: "fri6CLASSINFO") != nil{
+            f6classInfo = saveData.string(forKey: "fri6CLASSINFO")!
+            lf6.numberOfLines = 0
+            lf6.text = f6classInfo
+        }else {
+            lf6.numberOfLines = 0
+            lf6.text = ""
+        }
+//fri7
+        if saveData.string(forKey: "fri7CLASSINFO") != nil{
+            f7classInfo = saveData.string(forKey: "fri7CLASSINFO")!
+            lf7.numberOfLines = 0
+            lf7.text = f7classInfo
+        }else {
+            lf7.numberOfLines = 0
+            lf7.text = ""
+        }
+//sat1
+        if saveData.string(forKey: "sat1CLASSINFO") != nil{
+            s1classInfo = saveData.string(forKey: "sat1CLASSINFO")!
+            ls1.numberOfLines = 0
+            ls1.text = s1classInfo
+        }else {
+            ls1.numberOfLines = 0
+            ls1.text = ""
+        }
+//sat2
+        if saveData.string(forKey: "sat2CLASSINFO") != nil{
+            s2classInfo = saveData.string(forKey: "sat2CLASSINFO")!
+            ls2.numberOfLines = 0
+            ls2.text = s2classInfo
+        }else {
+            ls2.numberOfLines = 0
+            ls2.text = ""
+        }
+//sat3
+        if saveData.string(forKey: "sat3CLASSINFO") != nil{
+            s3classInfo = saveData.string(forKey: "sat3CLASSINFO")!
+            ls3.numberOfLines = 0
+            ls3.text = s3classInfo
+        }else {
+            ls3.numberOfLines = 0
+            ls3.text = ""
+        }
+//sat4
+        if saveData.string(forKey: "sat4CLASSINFO") != nil{
+            s4classInfo = saveData.string(forKey: "sat4CLASSINFO")!
+            ls4.numberOfLines = 0
+            ls4.text = s4classInfo
+        }else {
+            ls4.numberOfLines = 0
+            ls4.text = ""
+        }
+//sat5
+        if saveData.string(forKey: "sat5CLASSINFO") != nil{
+            s5classInfo = saveData.string(forKey: "sat5CLASSINFO")!
+            ls5.numberOfLines = 0
+            ls5.text = s5classInfo
+        }else {
+            ls5.numberOfLines = 0
+            ls5.text = ""
+        }
+//sat6
+        if saveData.string(forKey: "sat6CLASSINFO") != nil{
+            s6classInfo = saveData.string(forKey: "sat6CLASSINFO")!
+            ls6.numberOfLines = 0
+            ls6.text = s6classInfo
+        }else {
+            ls6.numberOfLines = 0
+            ls6.text = ""
+        }
+//sat7
+        if saveData.string(forKey: "sat7CLASSINFO") != nil{
+            s7classInfo = saveData.string(forKey: "sat7CLASSINFO")!
+            ls7.numberOfLines = 0
+            ls7.text = s7classInfo
+        }else {
+            ls7.numberOfLines = 0
+            ls7.text = ""
+        }
+//etc1
+        if saveData.string(forKey: "etc1CLASSINFO") != nil{
+            e1classInfo = saveData.string(forKey: "etc1CLASSINFO")!
+            le1.numberOfLines = 0
+            le1.text = e1classInfo
+        }else {
+            le1.numberOfLines = 0
+            le1.text = ""
+        }
+//etc2
+        if saveData.string(forKey: "etc2CLASSINFO") != nil{
+            e2classInfo = saveData.string(forKey: "etc2CLASSINFO")!
+            le2.numberOfLines = 0
+            le2.text = e2classInfo
+        }else {
+            le2.numberOfLines = 0
+            le2.text = ""
+        }
+//etc3
+        if saveData.string(forKey: "etc3CLASSINFO") != nil{
+            e3classInfo = saveData.string(forKey: "etc3CLASSINFO")!
+            le3.numberOfLines = 0
+            le3.text = e3classInfo
+        }else {
+            le3.numberOfLines = 0
+            le3.text = ""
+        }
+//etc4
+        if saveData.string(forKey: "etc4CLASSINFO") != nil{
+            e4classInfo = saveData.string(forKey: "etc4CLASSINFO")!
+            le4.numberOfLines = 0
+            le4.text = e4classInfo
+        }else {
+            le4.numberOfLines = 0
+            le4.text = ""
+        }
+//etc5
+        if saveData.string(forKey: "etc5CLASSINFO") != nil{
+            e5classInfo = saveData.string(forKey: "etc5CLASSINFO")!
+            le5.numberOfLines = 0
+            le5.text = e5classInfo
+        }else {
+            le5.numberOfLines = 0
+            le5.text = ""
+        }
+//etc6
+        if saveData.string(forKey: "etc6CLASSINFO") != nil{
+            e6classInfo = saveData.string(forKey: "etc6CLASSINFO")!
+            le6.numberOfLines = 0
+            le6.text = e6classInfo
+        }else {
+            le6.numberOfLines = 0
+            le6.text = ""
+        }
+//etc7
+        if saveData.string(forKey: "etc7CLASSINFO") != nil{
+            e7classInfo = saveData.string(forKey: "etc7CLASSINFO")!
+            le7.numberOfLines = 0
+            le7.text = e7classInfo
+        }else {
+            le7.numberOfLines = 0
+            le7.text = ""
+        }
         
         
 }
@@ -607,7 +733,7 @@ class TimeTableViewController: UIViewController {
         }
     }
     //m7 tapped code
-/*    @IBAction func m7Tapped () {
+    @IBAction func m7Tapped () {
         if saveData.string(forKey: "mon7CLASSINFO") == nil{
             pageDecider = 6
             saveData.set( pageDecider, forKey: "PAGEDECIDER")
@@ -618,7 +744,6 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    */
     
     
     //t1 tapped code
@@ -634,73 +759,162 @@ class TimeTableViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    //t2 tapped code
+    @IBAction func t2Tapped () {
+        if saveData.string(forKey: "tue2CLASSINFO") == nil{
+            pageDecider = 8
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 8
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //t3 tapped code
+    @IBAction func t3Tapped () {
+        if saveData.string(forKey: "tue3CLASSINFO") == nil{
+            pageDecider = 9
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 9
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //t4 tapped code
+    @IBAction func t4Tapped () {
+        if saveData.string(forKey: "tue4CLASSINFO") == nil{
+            pageDecider = 10
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 10
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //t5 tapped code
+    @IBAction func t5Tapped () {
+        if saveData.string(forKey: "tue5CLASSINFO") == nil{
+            pageDecider = 11
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 11
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //t6 tapped code
+    @IBAction func t6Tapped () {
+        if saveData.string(forKey: "tue6CLASSINFO") == nil{
+            pageDecider = 12
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 12
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //t7 tapped code
+    @IBAction func t7Tapped () {
+        if saveData.string(forKey: "tue7CLASSINFO") == nil{
+            pageDecider = 13
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 13
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w1 tapped code
+    @IBAction func w1Tapped () {
+        if saveData.string(forKey: "wed1CLASSINFO") == nil{
+            pageDecider = 14
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 14
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w2 tapped code
+    @IBAction func w2Tapped () {
+        if saveData.string(forKey: "wed2CLASSINFO") == nil{
+            pageDecider = 15
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 15
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w3 tapped code
+    @IBAction func w3Tapped () {
+        if saveData.string(forKey: "wed3CLASSINFO") == nil{
+            pageDecider = 16
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 16
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w4 tapped code
+    @IBAction func w4Tapped () {
+        if saveData.string(forKey: "wed4CLASSINFO") == nil{
+            pageDecider = 17
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 17
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w5 tapped code
+    @IBAction func w5Tapped () {
+        if saveData.string(forKey: "wed5CLASSINFO") == nil{
+            pageDecider = 18
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 18
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w6 tapped code
+    @IBAction func w6Tapped () {
+        if saveData.string(forKey: "wed6CLASSINFO") == nil{
+            pageDecider = 19
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 19
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //w7 tapped code
+    @IBAction func w7Tapped () {
+        if saveData.string(forKey: "wed7CLASSINFO") == nil{
+            pageDecider = 20
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 20
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
     //th1 tapped code
     @IBAction func th1Tapped () {
         if saveData.string(forKey: "thu1CLASSINFO") == nil{
@@ -713,23 +927,330 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+    //th2 tapped code
+    @IBAction func th2Tapped () {
+        if saveData.string(forKey: "thu2CLASSINFO") == nil{
+            pageDecider = 22
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 22
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //th3 tapped code
+    @IBAction func th3Tapped () {
+        if saveData.string(forKey: "thu3CLASSINFO") == nil{
+            pageDecider = 23
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 23
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //th4 tapped code
+    @IBAction func th4Tapped () {
+        if saveData.string(forKey: "thu4CLASSINFO") == nil{
+            pageDecider = 24
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 24
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //th5 tapped code
+    @IBAction func th5Tapped () {
+        if saveData.string(forKey: "thu5CLASSINFO") == nil{
+            pageDecider = 25
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 25
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //th6 tapped code
+    @IBAction func th6Tapped () {
+        if saveData.string(forKey: "thu6CLASSINFO") == nil{
+            pageDecider = 26
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 26
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //th7 tapped code
+    @IBAction func th7Tapped () {
+        if saveData.string(forKey: "thu7CLASSINFO") == nil{
+            pageDecider = 27
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 27
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f1 tapped code
+    @IBAction func f1Tapped () {
+        if saveData.string(forKey: "fri1CLASSINFO") == nil{
+            pageDecider = 28
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 28
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f2 tapped code
+    @IBAction func f2Tapped () {
+        if saveData.string(forKey: "fri2CLASSINFO") == nil{
+            pageDecider = 29
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 29
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f3 tapped code
+    @IBAction func f3Tapped () {
+        if saveData.string(forKey: "fri3CLASSINFO") == nil{
+            pageDecider = 30
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 30
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f4 tapped code
+    @IBAction func f4Tapped () {
+        if saveData.string(forKey: "fri4CLASSINFO") == nil{
+            pageDecider = 31
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 31
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f5 tapped code
+    @IBAction func f5Tapped () {
+        if saveData.string(forKey: "fri5CLASSINFO") == nil{
+            pageDecider = 32
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 32
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f6 tapped code
+    @IBAction func f6Tapped () {
+        if saveData.string(forKey: "fri6CLASSINFO") == nil{
+            pageDecider = 33
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 33
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //f7 tapped code
+    @IBAction func f7Tapped () {
+        if saveData.string(forKey: "fri7CLASSINFO") == nil{
+            pageDecider = 34
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 34
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s1 tapped code
+    @IBAction func s1Tapped () {
+        if saveData.string(forKey: "sat1CLASSINFO") == nil{
+            pageDecider = 35
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 35
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s2 tapped code
+    @IBAction func s2Tapped () {
+        if saveData.string(forKey: "sat2CLASSINFO") == nil{
+            pageDecider = 36
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 36
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s3 tapped code
+    @IBAction func s3Tapped () {
+        if saveData.string(forKey: "sat3CLASSINFO") == nil{
+            pageDecider = 37
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 37
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s4 tapped code
+    @IBAction func s4Tapped () {
+        if saveData.string(forKey: "sat4CLASSINFO") == nil{
+            pageDecider = 38
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 38
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s5 tapped code
+    @IBAction func s5Tapped () {
+        if saveData.string(forKey: "sat5CLASSINFO") == nil{
+            pageDecider = 39
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 39
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s6 tapped code
+    @IBAction func s6Tapped () {
+        if saveData.string(forKey: "sat6CLASSINFO") == nil{
+            pageDecider = 40
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 40
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //s7 tapped code
+    @IBAction func s7Tapped () {
+        if saveData.string(forKey: "sat7CLASSINFO") == nil{
+            pageDecider = 41
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 41
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e1 tapped code
+    @IBAction func e1Tapped () {
+        if saveData.string(forKey: "etc1CLASSINFO") == nil{
+            pageDecider = 42
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 42
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e2 tapped code
+    @IBAction func e2Tapped () {
+        if saveData.string(forKey: "etc2CLASSINFO") == nil{
+            pageDecider = 43
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 43
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e3 tapped code
+    @IBAction func e3Tapped () {
+        if saveData.string(forKey: "etc3CLASSINFO") == nil{
+            pageDecider = 44
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 44
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e4 tapped code
+    @IBAction func e4Tapped () {
+        if saveData.string(forKey: "etc4CLASSINFO") == nil{
+            pageDecider = 45
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 45
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e5 tapped code
+    @IBAction func e5Tapped () {
+        if saveData.string(forKey: "etc5CLASSINFO") == nil{
+            pageDecider = 46
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 46
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e6 tapped code
+    @IBAction func e6Tapped () {
+        if saveData.string(forKey: "etc6CLASSINFO") == nil{
+            pageDecider = 47
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 47
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
+    //e7 tapped code
+    @IBAction func e7Tapped () {
+        if saveData.string(forKey: "etc7CLASSINFO") == nil{
+            pageDecider = 48
+            saveData.set( pageDecider, forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "AddClass", sender: nil)
+        }else {
+            pageDecider = 48
+            saveData.set( pageDecider,forKey: "PAGEDECIDER")
+            self.performSegue(withIdentifier: "Attendance", sender: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
