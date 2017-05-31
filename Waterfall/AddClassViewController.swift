@@ -41,7 +41,7 @@ class AddClassViewController: UIViewController {
         
         if classRoom.isEmpty{
             if className.isEmpty{
-            //not sending classInfo but sending nil!
+            // sending nil not classInfo!
             saveData.set(nil, forKey: weekTime[pageDeciderRecieve] + "CLASSINFO")
             self.performSegue(withIdentifier: "toTable", sender: nil)
             }else {
@@ -52,23 +52,11 @@ class AddClassViewController: UIViewController {
         classInfo = className + " [" + classRoom + "]"
         saveData.set(classInfo, forKey: weekTime[pageDeciderRecieve] + "CLASSINFO")
         self.performSegue(withIdentifier: "toTable", sender: nil)
-      /* ViewController2　にあるfunction //upDate() をここで実行したい    */
         }}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
