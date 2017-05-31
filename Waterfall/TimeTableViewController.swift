@@ -223,14 +223,183 @@ class TimeTableViewController: UIViewController {
             lm3.numberOfLines = 0
             lm3.text = ""
         }
+
+//mon4
+        if saveData.string(forKey: "mon4CLASSINFO") != nil{
+            m4classInfo = saveData.string(forKey: "mon4CLASSINFO")!
+            lm4.numberOfLines = 0
+            lm4.text = m4classInfo
+        }else {
+            lm4.numberOfLines = 0
+            lm4.text = ""
+        }
         
-        
-        
+//mon5
+        if saveData.string(forKey: "mon5CLASSINFO") != nil{
+            m5classInfo = saveData.string(forKey: "mon5CLASSINFO")!
+            lm5.numberOfLines = 0
+            lm5.text = m5classInfo
+        }else {
+            lm5.numberOfLines = 0
+            lm5.text = ""
         }
 
+//mon6
+        if saveData.string(forKey: "mon6CLASSINFO") != nil{
+            m6classInfo = saveData.string(forKey: "mon6CLASSINFO")!
+            lm6.numberOfLines = 0
+            lm6.text = m6classInfo
+        }else {
+            lm6.numberOfLines = 0
+            lm6.text = ""
+        }
+//mon7
+        if saveData.string(forKey: "mon7CLASSINFO") != nil{
+            m7classInfo = saveData.string(forKey: "mon7CLASSINFO")!
+            lm7.numberOfLines = 0
+            lm7.text = m7classInfo
+        }else {
+            lm7.numberOfLines = 0
+            lm7.text = ""
+        }
         
-
-        // Do any additional setup after loading the view.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+}
+    // Do any additional setup after loading the view.
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -264,7 +433,7 @@ class TimeTableViewController: UIViewController {
         }
     }
     
-    //m3 tapped code
+//m3 tapped code
     @IBAction func m3Tapped () {
         if saveData.string(forKey: "mon3CLASSINFO") == nil{
             pageDecider = 2
