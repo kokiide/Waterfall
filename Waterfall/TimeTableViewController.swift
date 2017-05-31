@@ -70,6 +70,7 @@ class TimeTableViewController: UIViewController {
     var e7classInfo = ""
     
     
+    //giving each options an address
     var pageDecider : Int = 100
     
     
@@ -694,7 +695,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //m4 tapped code
+//m4 tapped code
     @IBAction func m4Tapped () {
         if saveData.string(forKey: "mon4CLASSINFO") == nil{
             pageDecider = 3
@@ -707,7 +708,7 @@ class TimeTableViewController: UIViewController {
         }
     }
     
-    //m5 tapped code
+//m5 tapped code
     @IBAction func m5Tapped () {
         if saveData.string(forKey: "mon5CLASSINFO") == nil{
             pageDecider = 4
@@ -720,7 +721,7 @@ class TimeTableViewController: UIViewController {
         }
     }
     
-    //m6 tapped code
+//m6 tapped code
     @IBAction func m6Tapped () {
         if saveData.string(forKey: "mon6CLASSINFO") == nil{
             pageDecider = 5
@@ -732,7 +733,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //m7 tapped code
+//m7 tapped code
     @IBAction func m7Tapped () {
         if saveData.string(forKey: "mon7CLASSINFO") == nil{
             pageDecider = 6
@@ -746,7 +747,7 @@ class TimeTableViewController: UIViewController {
     }
     
     
-    //t1 tapped code
+//t1 tapped code
     @IBAction func t1Tapped () {
         if saveData.string(forKey: "tue1CLASSINFO") == nil{
             pageDecider = 7
@@ -759,7 +760,7 @@ class TimeTableViewController: UIViewController {
         }
     }
     
-    //t2 tapped code
+//t2 tapped code
     @IBAction func t2Tapped () {
         if saveData.string(forKey: "tue2CLASSINFO") == nil{
             pageDecider = 8
@@ -771,7 +772,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //t3 tapped code
+//t3 tapped code
     @IBAction func t3Tapped () {
         if saveData.string(forKey: "tue3CLASSINFO") == nil{
             pageDecider = 9
@@ -783,7 +784,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //t4 tapped code
+//t4 tapped code
     @IBAction func t4Tapped () {
         if saveData.string(forKey: "tue4CLASSINFO") == nil{
             pageDecider = 10
@@ -795,7 +796,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //t5 tapped code
+//t5 tapped code
     @IBAction func t5Tapped () {
         if saveData.string(forKey: "tue5CLASSINFO") == nil{
             pageDecider = 11
@@ -807,7 +808,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //t6 tapped code
+//t6 tapped code
     @IBAction func t6Tapped () {
         if saveData.string(forKey: "tue6CLASSINFO") == nil{
             pageDecider = 12
@@ -819,7 +820,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //t7 tapped code
+//t7 tapped code
     @IBAction func t7Tapped () {
         if saveData.string(forKey: "tue7CLASSINFO") == nil{
             pageDecider = 13
@@ -831,7 +832,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w1 tapped code
+//w1 tapped code
     @IBAction func w1Tapped () {
         if saveData.string(forKey: "wed1CLASSINFO") == nil{
             pageDecider = 14
@@ -843,7 +844,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w2 tapped code
+//w2 tapped code
     @IBAction func w2Tapped () {
         if saveData.string(forKey: "wed2CLASSINFO") == nil{
             pageDecider = 15
@@ -855,7 +856,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w3 tapped code
+//w3 tapped code
     @IBAction func w3Tapped () {
         if saveData.string(forKey: "wed3CLASSINFO") == nil{
             pageDecider = 16
@@ -867,7 +868,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w4 tapped code
+//w4 tapped code
     @IBAction func w4Tapped () {
         if saveData.string(forKey: "wed4CLASSINFO") == nil{
             pageDecider = 17
@@ -879,7 +880,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w5 tapped code
+//w5 tapped code
     @IBAction func w5Tapped () {
         if saveData.string(forKey: "wed5CLASSINFO") == nil{
             pageDecider = 18
@@ -891,7 +892,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w6 tapped code
+//w6 tapped code
     @IBAction func w6Tapped () {
         if saveData.string(forKey: "wed6CLASSINFO") == nil{
             pageDecider = 19
@@ -903,7 +904,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //w7 tapped code
+//w7 tapped code
     @IBAction func w7Tapped () {
         if saveData.string(forKey: "wed7CLASSINFO") == nil{
             pageDecider = 20
@@ -915,7 +916,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th1 tapped code
+//th1 tapped code
     @IBAction func th1Tapped () {
         if saveData.string(forKey: "thu1CLASSINFO") == nil{
             pageDecider = 21
@@ -927,7 +928,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th2 tapped code
+//th2 tapped code
     @IBAction func th2Tapped () {
         if saveData.string(forKey: "thu2CLASSINFO") == nil{
             pageDecider = 22
@@ -939,7 +940,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th3 tapped code
+//th3 tapped code
     @IBAction func th3Tapped () {
         if saveData.string(forKey: "thu3CLASSINFO") == nil{
             pageDecider = 23
@@ -951,7 +952,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th4 tapped code
+//th4 tapped code
     @IBAction func th4Tapped () {
         if saveData.string(forKey: "thu4CLASSINFO") == nil{
             pageDecider = 24
@@ -963,7 +964,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th5 tapped code
+//th5 tapped code
     @IBAction func th5Tapped () {
         if saveData.string(forKey: "thu5CLASSINFO") == nil{
             pageDecider = 25
@@ -975,7 +976,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th6 tapped code
+//th6 tapped code
     @IBAction func th6Tapped () {
         if saveData.string(forKey: "thu6CLASSINFO") == nil{
             pageDecider = 26
@@ -987,7 +988,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //th7 tapped code
+//th7 tapped code
     @IBAction func th7Tapped () {
         if saveData.string(forKey: "thu7CLASSINFO") == nil{
             pageDecider = 27
@@ -999,7 +1000,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f1 tapped code
+//f1 tapped code
     @IBAction func f1Tapped () {
         if saveData.string(forKey: "fri1CLASSINFO") == nil{
             pageDecider = 28
@@ -1011,7 +1012,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f2 tapped code
+//f2 tapped code
     @IBAction func f2Tapped () {
         if saveData.string(forKey: "fri2CLASSINFO") == nil{
             pageDecider = 29
@@ -1023,7 +1024,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f3 tapped code
+//f3 tapped code
     @IBAction func f3Tapped () {
         if saveData.string(forKey: "fri3CLASSINFO") == nil{
             pageDecider = 30
@@ -1035,7 +1036,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f4 tapped code
+//f4 tapped code
     @IBAction func f4Tapped () {
         if saveData.string(forKey: "fri4CLASSINFO") == nil{
             pageDecider = 31
@@ -1047,7 +1048,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f5 tapped code
+//f5 tapped code
     @IBAction func f5Tapped () {
         if saveData.string(forKey: "fri5CLASSINFO") == nil{
             pageDecider = 32
@@ -1059,7 +1060,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f6 tapped code
+//f6 tapped code
     @IBAction func f6Tapped () {
         if saveData.string(forKey: "fri6CLASSINFO") == nil{
             pageDecider = 33
@@ -1071,7 +1072,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //f7 tapped code
+//f7 tapped code
     @IBAction func f7Tapped () {
         if saveData.string(forKey: "fri7CLASSINFO") == nil{
             pageDecider = 34
@@ -1083,7 +1084,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s1 tapped code
+//s1 tapped code
     @IBAction func s1Tapped () {
         if saveData.string(forKey: "sat1CLASSINFO") == nil{
             pageDecider = 35
@@ -1095,7 +1096,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s2 tapped code
+//s2 tapped code
     @IBAction func s2Tapped () {
         if saveData.string(forKey: "sat2CLASSINFO") == nil{
             pageDecider = 36
@@ -1107,7 +1108,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s3 tapped code
+//s3 tapped code
     @IBAction func s3Tapped () {
         if saveData.string(forKey: "sat3CLASSINFO") == nil{
             pageDecider = 37
@@ -1119,7 +1120,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s4 tapped code
+//s4 tapped code
     @IBAction func s4Tapped () {
         if saveData.string(forKey: "sat4CLASSINFO") == nil{
             pageDecider = 38
@@ -1131,7 +1132,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s5 tapped code
+//s5 tapped code
     @IBAction func s5Tapped () {
         if saveData.string(forKey: "sat5CLASSINFO") == nil{
             pageDecider = 39
@@ -1143,7 +1144,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s6 tapped code
+//s6 tapped code
     @IBAction func s6Tapped () {
         if saveData.string(forKey: "sat6CLASSINFO") == nil{
             pageDecider = 40
@@ -1155,7 +1156,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //s7 tapped code
+//s7 tapped code
     @IBAction func s7Tapped () {
         if saveData.string(forKey: "sat7CLASSINFO") == nil{
             pageDecider = 41
@@ -1167,7 +1168,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e1 tapped code
+//e1 tapped code
     @IBAction func e1Tapped () {
         if saveData.string(forKey: "etc1CLASSINFO") == nil{
             pageDecider = 42
@@ -1179,7 +1180,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e2 tapped code
+//e2 tapped code
     @IBAction func e2Tapped () {
         if saveData.string(forKey: "etc2CLASSINFO") == nil{
             pageDecider = 43
@@ -1191,7 +1192,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e3 tapped code
+//e3 tapped code
     @IBAction func e3Tapped () {
         if saveData.string(forKey: "etc3CLASSINFO") == nil{
             pageDecider = 44
@@ -1203,7 +1204,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e4 tapped code
+//e4 tapped code
     @IBAction func e4Tapped () {
         if saveData.string(forKey: "etc4CLASSINFO") == nil{
             pageDecider = 45
@@ -1215,7 +1216,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e5 tapped code
+//e5 tapped code
     @IBAction func e5Tapped () {
         if saveData.string(forKey: "etc5CLASSINFO") == nil{
             pageDecider = 46
@@ -1227,7 +1228,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e6 tapped code
+//e6 tapped code
     @IBAction func e6Tapped () {
         if saveData.string(forKey: "etc6CLASSINFO") == nil{
             pageDecider = 47
@@ -1239,7 +1240,7 @@ class TimeTableViewController: UIViewController {
             self.performSegue(withIdentifier: "Attendance", sender: nil)
         }
     }
-    //e7 tapped code
+//e7 tapped code
     @IBAction func e7Tapped () {
         if saveData.string(forKey: "etc7CLASSINFO") == nil{
             pageDecider = 48
