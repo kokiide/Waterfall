@@ -11,6 +11,8 @@ import UIKit
 class TimeTableViewController: UIViewController {
     
     let saveData = UserDefaults.standard
+    
+    // var's for class info = class name + class room
     var m1classInfo = ""
     var m2classInfo = ""
     var m3classInfo = ""
@@ -19,38 +21,53 @@ class TimeTableViewController: UIViewController {
     var m6classInfo = ""
     var m7classInfo = ""
     
+    var t1classInfo = ""
+    var t2classInfo = ""
+    var t3classInfo = ""
+    var t4classInfo = ""
+    var t5classInfo = ""
+    var t6classInfo = ""
+    var t7classInfo = ""
     
+    var w1classInfo = ""
+    var w2classInfo = ""
+    var w3classInfo = ""
+    var w4classInfo = ""
+    var w5classInfo = ""
+    var w6classInfo = ""
+    var w7classInfo = ""
     
+    var th1classInfo = ""
+    var th2classInfo = ""
+    var th3classInfo = ""
+    var th4classInfo = ""
+    var th5classInfo = ""
+    var th6classInfo = ""
+    var th7classInfo = ""
     
+    var f1classInfo = ""
+    var f2classInfo = ""
+    var f3classInfo = ""
+    var f4classInfo = ""
+    var f5classInfo = ""
+    var f6classInfo = ""
+    var f7classInfo = ""
     
+    var s1classInfo = ""
+    var s2classInfo = ""
+    var s3classInfo = ""
+    var s4classInfo = ""
+    var s5classInfo = ""
+    var s6classInfo = ""
+    var s7classInfo = ""
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    var e1classInfo = ""
+    var e2classInfo = ""
+    var e3classInfo = ""
+    var e4classInfo = ""
+    var e5classInfo = ""
+    var e6classInfo = ""
+    var e7classInfo = ""
     
     
     var pageDecider : Int = 100
