@@ -250,14 +250,23 @@ class TimeTableViewController: UIViewController {
      @IBOutlet var ie5: UIImageView!
      @IBOutlet var ie6: UIImageView!
      @IBOutlet var ie7: UIImageView!
+    
+    @IBOutlet var t: UILabel!
+    var quoteLabelText = ""
+
  
  
-    let imageClass:UIImage = #imageLiteral(resourceName: "class")
+    let imageClass:UIImage = #imageLiteral(resourceName: "class2")
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//名言集の表示
+        t.numberOfLines = 0
+        quoteLabelText = saveData.string(forKey: "QUOTE")!
+        t.text = quoteLabelText
         
 //mon1
         if saveData.string(forKey: "mon1CLASSINFO") != nil{

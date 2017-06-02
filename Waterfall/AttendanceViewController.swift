@@ -20,8 +20,6 @@ class AttendanceViewController: UIViewController {
     @IBOutlet var absPlusButton: UIButton!
     @IBOutlet var absMinusButton: UIButton!
     
-    /*button.layer.cornerRadius = 40    //角のR設定
-    button.layer.masksToBounds = true */
     
     
     
@@ -29,11 +27,11 @@ class AttendanceViewController: UIViewController {
     var nameofClass = ""
     let weekTime = ["mon1","mon2","mon3","mon4","mon5","mon6","mon7","tue1","tue2","tue3","tue4","tue5","tue6","tue7","wed1","wed2","wed3","wed4","wed5","wed6","wed7","thu1","thu2","thu3","thu4","thu5","thu6","thu7","fri1","fri2","fri3","fri4","fri5","fri6","fri7","sat1","sat2","sat3","sat4","sat5","sat6","sat7","etc1","etc2","etc3","etc4","etc5","etc6","etc7"]
     
-    var attNum: Int = 0
-    var absNum: Int = 0
-    var attRateNum: Int = 0
-    var total: Int = 0
-    var calculation = 0.0
+    var attNum: Double = 0
+    var absNum: Double = 0
+    var attRateNum: Double = 0
+    var total: Double = 0
+    var calculation: Double = 0
     
     var pageDeciderRecieve : Int = 100
 
@@ -55,13 +53,14 @@ class AttendanceViewController: UIViewController {
         
         if saveData.string(forKey: weekTime[pageDeciderRecieve] + "attNum") != nil {
             if saveData.string(forKey: weekTime[pageDeciderRecieve] + "absNum") != nil {
-                absNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "absNum")
+                absNum = saveData.double(forKey: weekTime[pageDeciderRecieve] + "absNum")
                 abs.text = String(absNum)
 
-                attNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "attNum")
+                attNum = saveData.double(forKey: weekTime[pageDeciderRecieve] + "attNum")
                 att.text = String(attNum)
+                calculateRate()
         } else if saveData.string(forKey: weekTime[pageDeciderRecieve] + "absNum") == nil{
-                attNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "attNum")
+                attNum = saveData.double(forKey: weekTime[pageDeciderRecieve] + "attNum")
                 att.text = String(attNum)
                 
                 absNum = 0
@@ -69,7 +68,7 @@ class AttendanceViewController: UIViewController {
             }}else if saveData.string(forKey: weekTime[pageDeciderRecieve] + "absNum") != nil {
             attNum = 0
             att.text = String(attNum)
-            absNum = saveData.integer(forKey: weekTime[pageDeciderRecieve] + "absNum")
+            absNum = saveData.double(forKey: weekTime[pageDeciderRecieve] + "absNum")
             abs.text = String(absNum)
         }else{
             attNum = 0
@@ -91,7 +90,7 @@ class AttendanceViewController: UIViewController {
         att.text = String(attNum)
         
         saveData.set(attNum, forKey: weekTime[pageDeciderRecieve] + "attNum")
-//        calculateRate()
+        calculateRate()
     }
     
     @IBAction func attMinus(){
@@ -99,33 +98,33 @@ class AttendanceViewController: UIViewController {
         att.text = String(attNum)
         
         saveData.set(attNum, forKey: weekTime[pageDeciderRecieve] + "attNum")
-//        calculateRate()
+        calculateRate()
     }
     
     @IBAction func absPlus() {
         absNum = absNum + 1
         abs.text = String(absNum)
         saveData.set(absNum, forKey: weekTime[pageDeciderRecieve] + "absNum")
-        //calculateRate()
+        calculateRate()
     }
     
     @IBAction func absMinus() {
         absNum = absNum - 1
         abs.text = String(absNum)
         saveData.set(absNum, forKey: weekTime[pageDeciderRecieve] + "absNum")
-        //calculateRate()
+        calculateRate()
     }
     
-/*    func calculateRate() {
-    absNum = saveData.integer(forKey: "m1absNum")
-    attNum = saveData.integer(forKey: "m1attNum")
+    func calculateRate() {
+    absNum = saveData.double(forKey: weekTime[pageDeciderRecieve] + "absNum")
+    attNum = saveData.double(forKey: weekTime[pageDeciderRecieve] + "attNum")
     total = absNum + attNum
     calculation = Double(attNum / total * 100)
     
     attRate.text = String(calculation) + "%"
-        saveData.set(calculation, forKey: "m1attRateNum")
+        saveData.set(calculation, forKey: weekTime[pageDeciderRecieve] + "attRateNum")
     }
-*/
+
     
     
     /*REMEMBER TO CHECK OUT THIS CODE WHEN ERRORS OCCUARS. PERHAPS NEED'S PAGEDICIDER SENDING*/

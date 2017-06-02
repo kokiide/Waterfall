@@ -16,7 +16,7 @@
 		8B1694F21EDDAB0E00EDC912 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F11EDDAB0E00EDC912 /* TimeTableViewController.swift */; };
 		8B1694F41EDDB1B000EDC912 /* AddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F31EDDB1B000EDC912 /* AddClassViewController.swift */; };
 		8B1694FB1EDDEDB800EDC912 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694FA1EDDEDB800EDC912 /* AttendanceViewController.swift */; };
-		8B1695071EDF12E600EDC912 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1695061EDF12E600EDC912 /* FirstViewController.swift */; };
+		8BB6D57B1EE1DF1C00B90A27 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6D57A1EE1DF1C00B90A27 /* TitleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		8B1694F11EDDAB0E00EDC912 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		8B1694F31EDDB1B000EDC912 /* AddClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClassViewController.swift; sourceTree = "<group>"; };
 		8B1694FA1EDDEDB800EDC912 /* AttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
-		8B1695061EDF12E600EDC912 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8BB6D57A1EE1DF1C00B90A27 /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8B0AD29C1ED29A31004BA499 /* AppDelegate.swift */,
-				8B1695061EDF12E600EDC912 /* FirstViewController.swift */,
+				8BB6D57A1EE1DF1C00B90A27 /* TitleViewController.swift */,
 				8B1694F11EDDAB0E00EDC912 /* TimeTableViewController.swift */,
 				8B1694F31EDDB1B000EDC912 /* AddClassViewController.swift */,
 				8B1694FA1EDDEDB800EDC912 /* AttendanceViewController.swift */,
@@ -273,7 +273,7 @@
 				8B1694F21EDDAB0E00EDC912 /* TimeTableViewController.swift in Sources */,
 				8B1694FB1EDDEDB800EDC912 /* AttendanceViewController.swift in Sources */,
 				8B1694F41EDDB1B000EDC912 /* AddClassViewController.swift in Sources */,
-				8B1695071EDF12E600EDC912 /* FirstViewController.swift in Sources */,
+				8BB6D57B1EE1DF1C00B90A27 /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
