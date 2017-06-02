@@ -189,9 +189,70 @@ class TimeTableViewController: UIViewController {
     @IBOutlet var le5: UILabel!
     @IBOutlet var le6: UILabel!
     @IBOutlet var le7: UILabel!
-//image
-    @IBOutlet var im1: UIImageView!
-    let image1:UIImage = #imageLiteral(resourceName: "class")
+    
+    //image
+    
+     //images
+     
+     @IBOutlet var im1: UIImageView!
+    
+     @IBOutlet var im2: UIImageView!
+     @IBOutlet var im3: UIImageView!
+     @IBOutlet var im4: UIImageView!
+     @IBOutlet var im5: UIImageView!
+     @IBOutlet var im6: UIImageView!
+     @IBOutlet var im7: UIImageView!
+     
+     @IBOutlet var it1: UIImageView!
+     @IBOutlet var it2: UIImageView!
+     @IBOutlet var it3: UIImageView!
+     @IBOutlet var it4: UIImageView!
+     @IBOutlet var it5: UIImageView!
+     @IBOutlet var it6: UIImageView!
+     @IBOutlet var it7: UIImageView!
+     
+     @IBOutlet var iw1: UIImageView!
+     @IBOutlet var iw2: UIImageView!
+     @IBOutlet var iw3: UIImageView!
+     @IBOutlet var iw4: UIImageView!
+     @IBOutlet var iw5: UIImageView!
+     @IBOutlet var iw6: UIImageView!
+     @IBOutlet var iw7: UIImageView!
+     
+/*     @IBOutlet var ith1: UIImgae!
+     @IBOutlet var ith2: UIImgae!
+     @IBOutlet var ith3: UIImgae!
+     @IBOutlet var ith4: UIImgae!
+     @IBOutlet var ith5: UIImgae!
+     @IBOutlet var ith6: UIImgae!
+     @IBOutlet var ith7: UIImgae!
+     
+     @IBOutlet var if1: UIImgae!
+     @IBOutlet var if2: UIImgae!
+     @IBOutlet var if3: UIImgae!
+     @IBOutlet var if4: UIImgae!
+     @IBOutlet var if5: UIImgae!
+     @IBOutlet var if6: UIImgae!
+     @IBOutlet var if7: UIImgae!
+     
+     @IBOutlet var is1: UIImgae!
+     @IBOutlet var is2: UIImgae!
+     @IBOutlet var is3: UIImgae!
+     @IBOutlet var is4: UIImgae!
+     @IBOutlet var is5: UIImgae!
+     @IBOutlet var is6: UIImgae!
+     @IBOutlet var is7: UIImgae!
+     
+     @IBOutlet var ie1: UIImgae!
+     @IBOutlet var ie2: UIImgae!
+     @IBOutlet var ie3: UIImgae!
+     @IBOutlet var ie4: UIImgae!
+     @IBOutlet var ie5: UIImgae!
+     @IBOutlet var ie6: UIImgae!
+     @IBOutlet var ie7: UIImgae!
+ */
+ 
+    let imageClass:UIImage = #imageLiteral(resourceName: "class")
     
     
     
@@ -203,28 +264,31 @@ class TimeTableViewController: UIViewController {
             m1classInfo = saveData.string(forKey: "mon1CLASSINFO")!
             lm1.numberOfLines = 0
             lm1.text = m1classInfo
-            im1.image = image1
+            im1.image = imageClass
         }else {
             lm1.numberOfLines = 0
             lm1.text = ""
             im1.image = nil
         }
-/*
+
 //mon2
         if saveData.string(forKey: "mon2CLASSINFO") != nil{
             m2classInfo = saveData.string(forKey: "mon2CLASSINFO")!
             lm2.numberOfLines = 0
             lm2.text = m2classInfo
+                     im2.image = imageClass
         }else {
             lm2.numberOfLines = 0
             lm2.text = ""
+            im2.image = nil
         }
-        
+/*        
 //mon3
         if saveData.string(forKey: "mon3CLASSINFO") != nil{
             m3classInfo = saveData.string(forKey: "mon3CLASSINFO")!
             lm3.numberOfLines = 0
             lm3.text = m3classInfo
+                     im3.image = imageClass
         }else {
             lm3.numberOfLines = 0
             lm3.text = ""
@@ -235,6 +299,7 @@ class TimeTableViewController: UIViewController {
             m4classInfo = saveData.string(forKey: "mon4CLASSINFO")!
             lm4.numberOfLines = 0
             lm4.text = m4classInfo
+                     im4.image = imageClass
         }else {
             lm4.numberOfLines = 0
             lm4.text = ""
@@ -245,6 +310,7 @@ class TimeTableViewController: UIViewController {
             m5classInfo = saveData.string(forKey: "mon5CLASSINFO")!
             lm5.numberOfLines = 0
             lm5.text = m5classInfo
+                     im5.image = imageClass
         }else {
             lm5.numberOfLines = 0
             lm5.text = ""
@@ -255,6 +321,7 @@ class TimeTableViewController: UIViewController {
             m6classInfo = saveData.string(forKey: "mon6CLASSINFO")!
             lm6.numberOfLines = 0
             lm6.text = m6classInfo
+                     im6.image = imageClass
         }else {
             lm6.numberOfLines = 0
             lm6.text = ""
@@ -264,6 +331,7 @@ class TimeTableViewController: UIViewController {
             m7classInfo = saveData.string(forKey: "mon7CLASSINFO")!
             lm7.numberOfLines = 0
             lm7.text = m7classInfo
+                     im7.image = imageClass
         }else {
             lm7.numberOfLines = 0
             lm7.text = ""
@@ -275,6 +343,7 @@ class TimeTableViewController: UIViewController {
             t1classInfo = saveData.string(forKey: "tue1CLASSINFO")!
             lt1.numberOfLines = 0
             lt1.text = t1classInfo
+                     it1.image = imageClass
         }else {
             lt1.numberOfLines = 0
             lt1.text = ""
@@ -285,6 +354,7 @@ class TimeTableViewController: UIViewController {
             t2classInfo = saveData.string(forKey: "tue2CLASSINFO")!
             lt2.numberOfLines = 0
             lt2.text = t2classInfo
+                  it2.image = imageClass
         }else {
             lt2.numberOfLines = 0
             lt2.text = ""
@@ -294,6 +364,7 @@ class TimeTableViewController: UIViewController {
             t3classInfo = saveData.string(forKey: "tue3CLASSINFO")!
             lt3.numberOfLines = 0
             lt3.text = t3classInfo
+                  it3.image = imageClass
         }else {
             lt3.numberOfLines = 0
             lt3.text = ""
@@ -303,6 +374,7 @@ class TimeTableViewController: UIViewController {
             t4classInfo = saveData.string(forKey: "tue4CLASSINFO")!
             lt4.numberOfLines = 0
             lt4.text = t4classInfo
+                  it4.image = imageClass
         }else {
             lt4.numberOfLines = 0
             lt4.text = ""
@@ -312,6 +384,7 @@ class TimeTableViewController: UIViewController {
             t5classInfo = saveData.string(forKey: "tue5CLASSINFO")!
             lt5.numberOfLines = 0
             lt5.text = t5classInfo
+                  it5.image = imageClass
         }else {
             lt5.numberOfLines = 0
             lt5.text = ""
@@ -321,6 +394,7 @@ class TimeTableViewController: UIViewController {
             t6classInfo = saveData.string(forKey: "tue6CLASSINFO")!
             lt6.numberOfLines = 0
             lt6.text = t6classInfo
+                  it6.image = imageClass
         }else {
             lt6.numberOfLines = 0
             lt6.text = ""
@@ -330,6 +404,7 @@ class TimeTableViewController: UIViewController {
             t7classInfo = saveData.string(forKey: "tue7CLASSINFO")!
             lt7.numberOfLines = 0
             lt7.text = t7classInfo
+                  it7.image = imageClass
         }else {
             lt7.numberOfLines = 0
             lt7.text = ""
@@ -340,6 +415,7 @@ class TimeTableViewController: UIViewController {
             w1classInfo = saveData.string(forKey: "wed1CLASSINFO")!
             lw1.numberOfLines = 0
             lw1.text = w1classInfo
+                  iw1.image = imageClass
         }else {
             lw1.numberOfLines = 0
             lw1.text = ""
@@ -349,6 +425,7 @@ class TimeTableViewController: UIViewController {
             w2classInfo = saveData.string(forKey: "wed2CLASSINFO")!
             lw2.numberOfLines = 0
             lw2.text = w2classInfo
+                iw2.image = imageClass
         }else {
             lw2.numberOfLines = 0
             lw2.text = ""
@@ -358,6 +435,7 @@ class TimeTableViewController: UIViewController {
             w3classInfo = saveData.string(forKey: "wed3CLASSINFO")!
             lw3.numberOfLines = 0
             lw3.text = w3classInfo
+                iw3.image = imageClass
         }else {
             lw3.numberOfLines = 0
             lw3.text = ""
@@ -367,6 +445,7 @@ class TimeTableViewController: UIViewController {
             w4classInfo = saveData.string(forKey: "wed4CLASSINFO")!
             lw4.numberOfLines = 0
             lw4.text = w4classInfo
+                iw4.image = imageClass
         }else {
             lw4.numberOfLines = 0
             lw4.text = ""
@@ -376,6 +455,7 @@ class TimeTableViewController: UIViewController {
             w5classInfo = saveData.string(forKey: "wed5CLASSINFO")!
             lw5.numberOfLines = 0
             lw5.text = w5classInfo
+                iw5.image = imageClass
         }else {
             lw5.numberOfLines = 0
             lw5.text = ""
@@ -385,6 +465,7 @@ class TimeTableViewController: UIViewController {
             w6classInfo = saveData.string(forKey: "wed6CLASSINFO")!
             lw6.numberOfLines = 0
             lw6.text = w6classInfo
+                iw6.image = imageClass
         }else {
             lw6.numberOfLines = 0
             lw6.text = ""
@@ -394,6 +475,7 @@ class TimeTableViewController: UIViewController {
             w7classInfo = saveData.string(forKey: "wed7CLASSINFO")!
             lw7.numberOfLines = 0
             lw7.text = w7classInfo
+                iw7.image = imageClass
         }else {
             lw7.numberOfLines = 0
             lw7.text = ""
@@ -404,6 +486,7 @@ class TimeTableViewController: UIViewController {
             th1classInfo = saveData.string(forKey: "thu1CLASSINFO")!
             lth1.numberOfLines = 0
             lth1.text = th1classInfo
+                ith1.image = imageClass
         }else {
             lth1.numberOfLines = 0
             lth1.text = ""
@@ -413,6 +496,7 @@ class TimeTableViewController: UIViewController {
             th2classInfo = saveData.string(forKey: "thu2CLASSINFO")!
             lth2.numberOfLines = 0
             lth2.text = th2classInfo
+                  ith2.image = imageClass
         }else {
             lth2.numberOfLines = 0
             lth2.text = ""
@@ -422,6 +506,7 @@ class TimeTableViewController: UIViewController {
             th3classInfo = saveData.string(forKey: "thu3CLASSINFO")!
             lth3.numberOfLines = 0
             lth3.text = th3classInfo
+                  ith3.image = imageClass
         }else {
             lth3.numberOfLines = 0
             lth3.text = ""
@@ -431,6 +516,7 @@ class TimeTableViewController: UIViewController {
             th4classInfo = saveData.string(forKey: "thu4CLASSINFO")!
             lth4.numberOfLines = 0
             lth4.text = th4classInfo
+                  ith4.image = imageClass
         }else {
             lth4.numberOfLines = 0
             lth4.text = ""
@@ -440,6 +526,7 @@ class TimeTableViewController: UIViewController {
             th5classInfo = saveData.string(forKey: "thu5CLASSINFO")!
             lth5.numberOfLines = 0
             lth5.text = th5classInfo
+                ith5.image = imageClass
         }else {
             lth5.numberOfLines = 0
             lth5.text = ""
@@ -449,6 +536,7 @@ class TimeTableViewController: UIViewController {
             th6classInfo = saveData.string(forKey: "thu6CLASSINFO")!
             lth6.numberOfLines = 0
             lth6.text = th6classInfo
+                ith6.image = imageClass
         }else {
             lth6.numberOfLines = 0
             lth6.text = ""
@@ -458,6 +546,7 @@ class TimeTableViewController: UIViewController {
             th7classInfo = saveData.string(forKey: "thu7CLASSINFO")!
             lth7.numberOfLines = 0
             lth7.text = th7classInfo
+                ith7.image = imageClass
         }else {
             lth7.numberOfLines = 0
             lth7.text = ""
@@ -467,6 +556,7 @@ class TimeTableViewController: UIViewController {
             f1classInfo = saveData.string(forKey: "fri1CLASSINFO")!
             lf1.numberOfLines = 0
             lf1.text = f1classInfo
+                if1.image = imageClass
         }else {
             lf1.numberOfLines = 0
             lf1.text = ""
@@ -476,6 +566,7 @@ class TimeTableViewController: UIViewController {
             f2classInfo = saveData.string(forKey: "fri2CLASSINFO")!
             lf2.numberOfLines = 0
             lf2.text = f2classInfo
+                if2.image = imageClass
         }else {
             lf2.numberOfLines = 0
             lf2.text = ""
@@ -485,6 +576,7 @@ class TimeTableViewController: UIViewController {
             f3classInfo = saveData.string(forKey: "fri3CLASSINFO")!
             lf3.numberOfLines = 0
             lf3.text = f3classInfo
+                if3.image = imageClass
         }else {
             lf3.numberOfLines = 0
             lf3.text = ""
@@ -494,6 +586,7 @@ class TimeTableViewController: UIViewController {
             f4classInfo = saveData.string(forKey: "fri4CLASSINFO")!
             lf4.numberOfLines = 0
             lf4.text = f4classInfo
+                if4.image = imageClass
         }else {
             lf4.numberOfLines = 0
             lf4.text = ""
@@ -503,6 +596,7 @@ class TimeTableViewController: UIViewController {
             f5classInfo = saveData.string(forKey: "fri5CLASSINFO")!
             lf5.numberOfLines = 0
             lf5.text = f5classInfo
+                if5.image = imageClass
         }else {
             lf5.numberOfLines = 0
             lf5.text = ""
@@ -512,6 +606,7 @@ class TimeTableViewController: UIViewController {
             f6classInfo = saveData.string(forKey: "fri6CLASSINFO")!
             lf6.numberOfLines = 0
             lf6.text = f6classInfo
+                if6.image = imageClass
         }else {
             lf6.numberOfLines = 0
             lf6.text = ""
@@ -521,6 +616,7 @@ class TimeTableViewController: UIViewController {
             f7classInfo = saveData.string(forKey: "fri7CLASSINFO")!
             lf7.numberOfLines = 0
             lf7.text = f7classInfo
+                if7.image = imageClass
         }else {
             lf7.numberOfLines = 0
             lf7.text = ""
@@ -530,6 +626,7 @@ class TimeTableViewController: UIViewController {
             s1classInfo = saveData.string(forKey: "sat1CLASSINFO")!
             ls1.numberOfLines = 0
             ls1.text = s1classInfo
+                is1.image = imageClass
         }else {
             ls1.numberOfLines = 0
             ls1.text = ""
@@ -539,6 +636,7 @@ class TimeTableViewController: UIViewController {
             s2classInfo = saveData.string(forKey: "sat2CLASSINFO")!
             ls2.numberOfLines = 0
             ls2.text = s2classInfo
+                 is2.image = imageClass
         }else {
             ls2.numberOfLines = 0
             ls2.text = ""
@@ -548,6 +646,7 @@ class TimeTableViewController: UIViewController {
             s3classInfo = saveData.string(forKey: "sat3CLASSINFO")!
             ls3.numberOfLines = 0
             ls3.text = s3classInfo
+                 is3.image = imageClass
         }else {
             ls3.numberOfLines = 0
             ls3.text = ""
@@ -557,6 +656,7 @@ class TimeTableViewController: UIViewController {
             s4classInfo = saveData.string(forKey: "sat4CLASSINFO")!
             ls4.numberOfLines = 0
             ls4.text = s4classInfo
+                 is4.image = imageClass
         }else {
             ls4.numberOfLines = 0
             ls4.text = ""
@@ -566,6 +666,7 @@ class TimeTableViewController: UIViewController {
             s5classInfo = saveData.string(forKey: "sat5CLASSINFO")!
             ls5.numberOfLines = 0
             ls5.text = s5classInfo
+                 is5.image = imageClass
         }else {
             ls5.numberOfLines = 0
             ls5.text = ""
@@ -575,6 +676,7 @@ class TimeTableViewController: UIViewController {
             s6classInfo = saveData.string(forKey: "sat6CLASSINFO")!
             ls6.numberOfLines = 0
             ls6.text = s6classInfo
+                 is6.image = imageClass
         }else {
             ls6.numberOfLines = 0
             ls6.text = ""
@@ -584,6 +686,7 @@ class TimeTableViewController: UIViewController {
             s7classInfo = saveData.string(forKey: "sat7CLASSINFO")!
             ls7.numberOfLines = 0
             ls7.text = s7classInfo
+                 is7.image = imageClass
         }else {
             ls7.numberOfLines = 0
             ls7.text = ""
@@ -593,6 +696,7 @@ class TimeTableViewController: UIViewController {
             e1classInfo = saveData.string(forKey: "etc1CLASSINFO")!
             le1.numberOfLines = 0
             le1.text = e1classInfo
+                 ie1.image = imageClass
         }else {
             le1.numberOfLines = 0
             le1.text = ""
@@ -602,6 +706,7 @@ class TimeTableViewController: UIViewController {
             e2classInfo = saveData.string(forKey: "etc2CLASSINFO")!
             le2.numberOfLines = 0
             le2.text = e2classInfo
+                  ie2.image = imageClass
         }else {
             le2.numberOfLines = 0
             le2.text = ""
@@ -611,6 +716,7 @@ class TimeTableViewController: UIViewController {
             e3classInfo = saveData.string(forKey: "etc3CLASSINFO")!
             le3.numberOfLines = 0
             le3.text = e3classInfo
+                  ie3.image = imageClass
         }else {
             le3.numberOfLines = 0
             le3.text = ""
@@ -620,6 +726,7 @@ class TimeTableViewController: UIViewController {
             e4classInfo = saveData.string(forKey: "etc4CLASSINFO")!
             le4.numberOfLines = 0
             le4.text = e4classInfo
+                  ie4.image = imageClass
         }else {
             le4.numberOfLines = 0
             le4.text = ""
@@ -629,6 +736,7 @@ class TimeTableViewController: UIViewController {
             e5classInfo = saveData.string(forKey: "etc5CLASSINFO")!
             le5.numberOfLines = 0
             le5.text = e5classInfo
+                  ie5.image = imageClass
         }else {
             le5.numberOfLines = 0
             le5.text = ""
@@ -638,6 +746,7 @@ class TimeTableViewController: UIViewController {
             e6classInfo = saveData.string(forKey: "etc6CLASSINFO")!
             le6.numberOfLines = 0
             le6.text = e6classInfo
+                  ie6.image = imageClass
         }else {
             le6.numberOfLines = 0
             le6.text = ""
@@ -647,12 +756,13 @@ class TimeTableViewController: UIViewController {
             e7classInfo = saveData.string(forKey: "etc7CLASSINFO")!
             le7.numberOfLines = 0
             le7.text = e7classInfo
+                  ie7.image = imageClass
         }else {
             le7.numberOfLines = 0
             le7.text = ""
         }
-        
- */
+        */
+ 
 }
     // Do any additional setup after loading the view.
 
