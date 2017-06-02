@@ -219,38 +219,38 @@ class TimeTableViewController: UIViewController {
      @IBOutlet var iw6: UIImageView!
      @IBOutlet var iw7: UIImageView!
      
-/*     @IBOutlet var ith1: UIImgae!
-     @IBOutlet var ith2: UIImgae!
-     @IBOutlet var ith3: UIImgae!
-     @IBOutlet var ith4: UIImgae!
-     @IBOutlet var ith5: UIImgae!
-     @IBOutlet var ith6: UIImgae!
-     @IBOutlet var ith7: UIImgae!
+     @IBOutlet var ith1: UIImageView!
+     @IBOutlet var ith2: UIImageView!
+     @IBOutlet var ith3: UIImageView!
+     @IBOutlet var ith4: UIImageView!
+     @IBOutlet var ith5: UIImageView!
+     @IBOutlet var ith6: UIImageView!
+     @IBOutlet var ith7: UIImageView!
      
-     @IBOutlet var if1: UIImgae!
-     @IBOutlet var if2: UIImgae!
-     @IBOutlet var if3: UIImgae!
-     @IBOutlet var if4: UIImgae!
-     @IBOutlet var if5: UIImgae!
-     @IBOutlet var if6: UIImgae!
-     @IBOutlet var if7: UIImgae!
+     @IBOutlet var if1: UIImageView!
+     @IBOutlet var if2: UIImageView!
+     @IBOutlet var if3: UIImageView!
+     @IBOutlet var if4: UIImageView!
+     @IBOutlet var if5: UIImageView!
+     @IBOutlet var if6: UIImageView!
+     @IBOutlet var if7: UIImageView!
      
-     @IBOutlet var is1: UIImgae!
-     @IBOutlet var is2: UIImgae!
-     @IBOutlet var is3: UIImgae!
-     @IBOutlet var is4: UIImgae!
-     @IBOutlet var is5: UIImgae!
-     @IBOutlet var is6: UIImgae!
-     @IBOutlet var is7: UIImgae!
+     @IBOutlet var is1: UIImageView!
+     @IBOutlet var is2: UIImageView!
+     @IBOutlet var is3: UIImageView!
+     @IBOutlet var is4: UIImageView!
+     @IBOutlet var is5: UIImageView!
+     @IBOutlet var is6: UIImageView!
+     @IBOutlet var is7: UIImageView!
      
-     @IBOutlet var ie1: UIImgae!
-     @IBOutlet var ie2: UIImgae!
-     @IBOutlet var ie3: UIImgae!
-     @IBOutlet var ie4: UIImgae!
-     @IBOutlet var ie5: UIImgae!
-     @IBOutlet var ie6: UIImgae!
-     @IBOutlet var ie7: UIImgae!
- */
+     @IBOutlet var ie1: UIImageView!
+     @IBOutlet var ie2: UIImageView!
+     @IBOutlet var ie3: UIImageView!
+     @IBOutlet var ie4: UIImageView!
+     @IBOutlet var ie5: UIImageView!
+     @IBOutlet var ie6: UIImageView!
+     @IBOutlet var ie7: UIImageView!
+ 
  
     let imageClass:UIImage = #imageLiteral(resourceName: "class")
     
