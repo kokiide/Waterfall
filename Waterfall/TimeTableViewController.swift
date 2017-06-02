@@ -189,6 +189,9 @@ class TimeTableViewController: UIViewController {
     @IBOutlet var le5: UILabel!
     @IBOutlet var le6: UILabel!
     @IBOutlet var le7: UILabel!
+//image
+    @IBOutlet var im1: UIImageView!
+    let image1:UIImage = #imageLiteral(resourceName: "class")
     
     
     
@@ -200,11 +203,13 @@ class TimeTableViewController: UIViewController {
             m1classInfo = saveData.string(forKey: "mon1CLASSINFO")!
             lm1.numberOfLines = 0
             lm1.text = m1classInfo
-            }else {
+            im1.image = image1
+        }else {
             lm1.numberOfLines = 0
             lm1.text = ""
+            im1.image = nil
         }
-        
+/*
 //mon2
         if saveData.string(forKey: "mon2CLASSINFO") != nil{
             m2classInfo = saveData.string(forKey: "mon2CLASSINFO")!
@@ -647,7 +652,7 @@ class TimeTableViewController: UIViewController {
             le7.text = ""
         }
         
-        
+ */
 }
     // Do any additional setup after loading the view.
 

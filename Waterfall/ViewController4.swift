@@ -10,13 +10,8 @@ import UIKit
 
 class ViewController4: UIViewController {
     
-    @IBOutlet var m2classNameTF: UITextField!
-    @IBOutlet var m2classRoomTF: UITextField!
-    
-    var m2className = ""
-    var m2classRoom = ""
-    var m2classInfo = ""
-    let saveData = UserDefaults.standard
+    @IBOutlet var imageView: UIImageView!
+    let image1:UIImage = #imageLiteral(resourceName: "class")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,28 +20,15 @@ class ViewController4: UIViewController {
     }
     
     
-    @IBAction func saveIsTapped() {
-        
-        m2className = m2classNameTF.text!
-        m2classRoom = m2classRoomTF.text!
-        if m2classRoom.isEmpty {
-            m2classInfo = m2className
-            saveData.set(m2classInfo, forKey: "m2CLASSINFO")
-            self.performSegue(withIdentifier: "toTablem2", sender: nil)
-        }else {
-        m2classInfo = m2className + " [" + m2classRoom + "]"
-        
-        saveData.set(m2classInfo, forKey: "m2CLASSINFO")
-        self.performSegue(withIdentifier: "toTablem2", sender: nil)
-        /* ViewController2　にあるfunction //upDate() をここで実行したい    */
-        }}
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func buttonisTapped() {
+        imageView.image = image1
     
+    }
     /*
      // MARK: - Navigation
      
