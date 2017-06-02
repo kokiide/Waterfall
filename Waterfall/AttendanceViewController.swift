@@ -14,6 +14,17 @@ class AttendanceViewController: UIViewController {
     @IBOutlet var att: UILabel!
     @IBOutlet var abs: UILabel!
     @IBOutlet var attRate: UILabel!
+    
+    @IBOutlet var attPlusButton: UIButton!
+    @IBOutlet var attMinusButton: UIButton!
+    @IBOutlet var absPlusButton: UIButton!
+    @IBOutlet var absMinusButton: UIButton!
+    
+    /*button.layer.cornerRadius = 40    //角のR設定
+    button.layer.masksToBounds = true */
+    
+    
+    
     let saveData = UserDefaults.standard
     var nameofClass = ""
     let weekTime = ["mon1","mon2","mon3","mon4","mon5","mon6","mon7","tue1","tue2","tue3","tue4","tue5","tue6","tue7","wed1","wed2","wed3","wed4","wed5","wed6","wed7","thu1","thu2","thu3","thu4","thu5","thu6","thu7","fri1","fri2","fri3","fri4","fri5","fri6","fri7","sat1","sat2","sat3","sat4","sat5","sat6","sat7","etc1","etc2","etc3","etc4","etc5","etc6","etc7"]
@@ -28,6 +39,16 @@ class AttendanceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        attPlusButton.layer.cornerRadius = 25
+        attPlusButton.layer.masksToBounds = true
+        attMinusButton.layer.cornerRadius = 25
+        attMinusButton.layer.masksToBounds = true
+        absPlusButton.layer.cornerRadius = 25
+        absPlusButton.layer.masksToBounds = true
+        absMinusButton.layer.cornerRadius = 25
+        absMinusButton.layer.masksToBounds = true
+        //Check the above
         
         pageDeciderRecieve = saveData.integer(forKey: "PAGEDECIDER") /*recieveNumber */
         barTitle.text = saveData.string(forKey: weekTime[pageDeciderRecieve] + "CLASSINFO")

@@ -15,7 +15,6 @@
 		8B0AD2BD1ED29A31004BA499 /* WaterfallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0AD2BC1ED29A31004BA499 /* WaterfallUITests.swift */; };
 		8B1694F21EDDAB0E00EDC912 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F11EDDAB0E00EDC912 /* TimeTableViewController.swift */; };
 		8B1694F41EDDB1B000EDC912 /* AddClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F31EDDB1B000EDC912 /* AddClassViewController.swift */; };
-		8B1694F81EDDE36E00EDC912 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694F71EDDE36E00EDC912 /* ViewController4.swift */; };
 		8B1694FB1EDDEDB800EDC912 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1694FA1EDDEDB800EDC912 /* AttendanceViewController.swift */; };
 		8B1695071EDF12E600EDC912 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1695061EDF12E600EDC912 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		8B0AD2BE1ED29A31004BA499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1694F11EDDAB0E00EDC912 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		8B1694F31EDDB1B000EDC912 /* AddClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClassViewController.swift; sourceTree = "<group>"; };
-		8B1694F71EDDE36E00EDC912 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		8B1694FA1EDDEDB800EDC912 /* AttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
 		8B1695061EDF12E600EDC912 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 				8B1694F31EDDB1B000EDC912 /* AddClassViewController.swift */,
 				8B1694FA1EDDEDB800EDC912 /* AttendanceViewController.swift */,
 				8B0AD2A01ED29A31004BA499 /* Main.storyboard */,
-				8B1694F71EDDE36E00EDC912 /* ViewController4.swift */,
 				8B0AD2A31ED29A31004BA499 /* Assets.xcassets */,
 				8B0AD2A51ED29A31004BA499 /* LaunchScreen.storyboard */,
 				8B0AD2A81ED29A31004BA499 /* Info.plist */,
@@ -276,7 +273,6 @@
 				8B1694F21EDDAB0E00EDC912 /* TimeTableViewController.swift in Sources */,
 				8B1694FB1EDDEDB800EDC912 /* AttendanceViewController.swift in Sources */,
 				8B1694F41EDDB1B000EDC912 /* AddClassViewController.swift in Sources */,
-				8B1694F81EDDE36E00EDC912 /* ViewController4.swift in Sources */,
 				8B1695071EDF12E600EDC912 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

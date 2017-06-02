@@ -480,7 +480,7 @@ class TimeTableViewController: UIViewController {
             lw7.numberOfLines = 0
             lw7.text = ""
         }
-/*
+
 //thu1
         if saveData.string(forKey: "thu1CLASSINFO") != nil{
             th1classInfo = saveData.string(forKey: "thu1CLASSINFO")!
@@ -761,7 +761,7 @@ class TimeTableViewController: UIViewController {
             le7.numberOfLines = 0
             le7.text = ""
         }
-        */
+ 
  
 }
     // Do any additional setup after loading the view.
