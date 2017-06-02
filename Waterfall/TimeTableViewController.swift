@@ -282,7 +282,7 @@ class TimeTableViewController: UIViewController {
             lm2.text = ""
             im2.image = nil
         }
-/*        
+        
 //mon3
         if saveData.string(forKey: "mon3CLASSINFO") != nil{
             m3classInfo = saveData.string(forKey: "mon3CLASSINFO")!
@@ -480,7 +480,7 @@ class TimeTableViewController: UIViewController {
             lw7.numberOfLines = 0
             lw7.text = ""
         }
-
+/*
 //thu1
         if saveData.string(forKey: "thu1CLASSINFO") != nil{
             th1classInfo = saveData.string(forKey: "thu1CLASSINFO")!
